@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Tue Apr 21 19:16:42 2026
+# Process ID         : 24332
+# Current directory  : C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.runs/mig_synth_1
+# Command line       : vivado.exe -log mig.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source mig.tcl
+# Log file           : C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.runs/mig_synth_1/mig.vds
+# Journal file       : C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.runs/mig_synth_1\vivado.jou
+# Running On         : QianPC
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : 12th Gen Intel(R) Core(TM) i9-12900H
+# CPU Frequency      : 2918 MHz
+# CPU Physical cores : 14
+# CPU Logical cores  : 20
+# Host memory        : 42617 MB
+# Swap memory        : 3669 MB
+# Total Virtual      : 46287 MB
+# Available Virtual  : 7956 MB
+#-----------------------------------------------------------
+source mig.tcl -notrace

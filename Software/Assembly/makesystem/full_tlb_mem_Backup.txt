@@ -1,0 +1,28 @@
+MEMORY {
+  ram0 (rx)  : ORIGIN = 0x00000000, LENGTH = 0x00001000  /* mem0: file for init */
+  ram1 (rx)  : ORIGIN = 0x10000000, LENGTH = 0x00001000  /* mem1: PT blob file */
+  ram2 (rx)  : ORIGIN = 0x20000000, LENGTH = 0x00004000  /* mem2: user text file */
+  ram3 (rwx) : ORIGIN = 0x20002000, LENGTH = 0x00004000  /* mem3: data/bss file */
+}
+
+SECTIONS
+{
+  /* mem0: init/vec runs at VA 0x00000000 */
+  .init_text 0x00000000 : { *(.init_text) } AT> ram0
+
+  /* optional PT blob → mem1 file */
+  .pt_data   0x00000000 : { *(.pt_data) }   AT> ram1
+
+  /* ----- user .text at VA 0x00002000 (NOT 0) ----- */
+  . = 0x00002000;
+  __user_start = .;                   /* make symbol exactly here */
+  .text . : { *(.text .text.*) } AT> ram3
+
+  . = 0x00001000;                    /* data VA base (unchanged if you like) */
+  .early_stack . : { *(.early_stack) } AT> ram3
+  .data   . : { *(.data .data.* .sdata .sdata.*) } AT> ram3
+  .rodata . : { *(.rodata .rodata.* .srodata .srodata.*) } AT> ram3
+  .bss (NOLOAD) : { *(.bss .bss.* .sbss .sbss.*) *(COMMON) } > ram3
+
+  /DISCARD/ : { *(.comment) *(.riscv.attributes) *(.gnu.attributes) }
+}

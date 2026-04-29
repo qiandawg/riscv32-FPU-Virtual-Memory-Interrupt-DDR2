@@ -1,0 +1,33 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Tue Feb  3 20:35:31 2026
+# Process ID         : 29444
+# Current directory  : C:/RISCV_prime/riscv-prod/RTL/CPUs/RISCVpipelinedRV32IMF_INT_VM_Cache
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent10628 C:\RISCV_prime\riscv-prod\RTL\CPUs\RISCVpipelinedRV32IMF_INT_VM_Cache\RISCVpipelinedRV32IMF_INT_VM_Cache.xpr
+# Log file           : C:/RISCV_prime/riscv-prod/RTL/CPUs/RISCVpipelinedRV32IMF_INT_VM_Cache/vivado.log
+# Journal file       : C:/RISCV_prime/riscv-prod/RTL/CPUs/RISCVpipelinedRV32IMF_INT_VM_Cache\vivado.jou
+# Running On         : QianPC
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : 12th Gen Intel(R) Core(TM) i9-12900H
+# CPU Frequency      : 2918 MHz
+# CPU Physical cores : 14
+# CPU Logical cores  : 20
+# Host memory        : 42617 MB
+# Swap memory        : 5100 MB
+# Total Virtual      : 47718 MB
+# Available Virtual  : 28697 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/RISCV_prime/riscv-prod/RTL/CPUs/RISCVpipelinedRV32IMF_INT_VM_Cache/RISCVpipelinedRV32IMF_INT_VM_Cache.xpr
+launch_simulation
+open_wave_config C:/RISCV_prime/riscv-prod/RTL/CPUs/RISCVpipelinedRV32IMF_INT_VM_Cache/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sim_1/imports/RISCVpipelineRV32IM/pipelinedcpu_tb_behav.wcfg
+source pipelinedcpu_tb.tcl
+restart
+run 30 us
+restart
+run 30 us
+run 30 us

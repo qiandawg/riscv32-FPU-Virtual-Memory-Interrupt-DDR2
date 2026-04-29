@@ -1,0 +1,139 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Wed Jan 28 19:38:15 2026
+# Process ID         : 9416
+# Current directory  : C:/RISCV_prime/riscv-prod/RTL/CPUs/RISCVpipelinedRV32IMF_INT_VM_Cache
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent29892 C:\RISCV_prime\riscv-prod\RTL\CPUs\RISCVpipelinedRV32IMF_INT_VM_Cache\RISCVpipelinedRV32IMF_INT_VM_Cache.xpr
+# Log file           : C:/RISCV_prime/riscv-prod/RTL/CPUs/RISCVpipelinedRV32IMF_INT_VM_Cache/vivado.log
+# Journal file       : C:/RISCV_prime/riscv-prod/RTL/CPUs/RISCVpipelinedRV32IMF_INT_VM_Cache\vivado.jou
+# Running On         : QianPC
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : 12th Gen Intel(R) Core(TM) i9-12900H
+# CPU Frequency      : 2918 MHz
+# CPU Physical cores : 14
+# CPU Logical cores  : 20
+# Host memory        : 42617 MB
+# Swap memory        : 4563 MB
+# Total Virtual      : 47181 MB
+# Available Virtual  : 25648 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/RISCV_prime/riscv-prod/RTL/CPUs/RISCVpipelinedRV32IMF_INT_VM_Cache/RISCVpipelinedRV32IMF_INT_VM_Cache.xpr
+launch_simulation
+open_wave_config C:/RISCV_prime/riscv-prod/RTL/CPUs/RISCVpipelinedRV32IMF_INT_VM_Cache/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sim_1/imports/RISCVpipelineRV32IM/pipelinedcpu_tb_behav.wcfg
+source pipelinedcpu_tb.tcl
+relaunch_sim
+run 30 us
+current_wave_config {pipelinedcpu_tb_behav.wcfg}
+add_wave {{/pipelinedcpu_tb/cpu/fpr/register[0]}} {{/pipelinedcpu_tb/cpu/fpr/register[1]}} {{/pipelinedcpu_tb/cpu/fpr/register[2]}} {{/pipelinedcpu_tb/cpu/fpr/register[3]}} {{/pipelinedcpu_tb/cpu/fpr/register[4]}} {{/pipelinedcpu_tb/cpu/fpr/register[5]}} 
+restart
+run 30 us
+run 30 us
+current_wave_config {pipelinedcpu_tb_behav.wcfg}
+add_wave {{/pipelinedcpu_tb/cpu/id_stage/cu/fop}} 
+current_wave_config {pipelinedcpu_tb_behav.wcfg}
+add_wave {{/pipelinedcpu_tb/cpu/fp_unit/f_div}} 
+current_wave_config {pipelinedcpu_tb_behav.wcfg}
+add_wave {{/pipelinedcpu_tb/cpu/fp_unit}} 
+current_wave_config {pipelinedcpu_tb_behav.wcfg}
+add_wave {{/pipelinedcpu_tb/cpu/fp_unit/a}} {{/pipelinedcpu_tb/cpu/fp_unit/b}} 
+current_wave_config {pipelinedcpu_tb_behav.wcfg}
+add_wave {{/pipelinedcpu_tb/cpu/fp_unit/f_div/count}} 
+restart
+run 30 us
+relaunch_sim
+restart
+run 30 us
+relaunch_sim
+relaunch_sim
+restart
+run 30 us
+relaunch_sim
+relaunch_sim
+relaunch_sim
+restart
+run 30 us
+current_wave_config {pipelinedcpu_tb_behav.wcfg}
+add_wave {{/pipelinedcpu_tb/cpu/fp_unit/fc}} 
+current_wave_config {pipelinedcpu_tb_behav.wcfg}
+add_wave {{/pipelinedcpu_tb/cpu/id_stage/cu/i_fdiv}} 
+restart
+run 30 us
+current_wave_config {pipelinedcpu_tb_behav.wcfg}
+add_wave {{/pipelinedcpu_tb/opcode}} 
+current_wave_config {pipelinedcpu_tb_behav.wcfg}
+add_wave {{/pipelinedcpu_tb/cpu/no_cache_stall}} 
+restart
+run 30 us
+current_wave_config {pipelinedcpu_tb_behav.wcfg}
+add_wave {{/pipelinedcpu_tb/cpu/id_stage/cu/stall_others}} 
+current_wave_config {pipelinedcpu_tb_behav.wcfg}
+add_wave {{/pipelinedcpu_tb/cpu/memsys/mem_ready}} 
+restart
+run 30 us
+current_wave_config {pipelinedcpu_tb_behav.wcfg}
+add_wave {{/pipelinedcpu_tb/cpu/memsys/is_load}} 
+restart
+run 30 us
+relaunch_sim
+relaunch_sim
+relaunch_sim
+restart
+run 30 us
+current_wave_config {pipelinedcpu_tb_behav.wcfg}
+add_wave {{/pipelinedcpu_tb/cpu/mw_reg/wldst}} 
+current_wave_config {pipelinedcpu_tb_behav.wcfg}
+add_wave {{/pipelinedcpu_tb/cpu/mw_reg/mldst}} 
+current_wave_config {pipelinedcpu_tb_behav.wcfg}
+add_wave {{/pipelinedcpu_tb/cpu/fp_unit/stall_div}} 
+restart
+run 30 us
+relaunch_sim
+restart
+run 30 us
+relaunch_sim
+restart
+run 30 us
+relaunch_sim
+restart
+run 30 us
+relaunch_sim
+relaunch_sim
+restart
+run 30 us
+current_wave_config {pipelinedcpu_tb_behav.wcfg}
+add_wave {{/pipelinedcpu_tb/cpu/id_stage/cu/unimplemented_inst}} 
+restart
+run 30 us
+current_wave_config {pipelinedcpu_tb_behav.wcfg}
+add_wave {{/pipelinedcpu_tb/cpu/id_stage/jalai/addr}} 
+current_wave_config {pipelinedcpu_tb_behav.wcfg}
+add_wave {{/pipelinedcpu_tb/cpu/id_stage/jalrai/addr}} 
+current_wave_config {pipelinedcpu_tb_behav.wcfg}
+add_wave {{/pipelinedcpu_tb/cpu/id_stage/pcsrc}} 
+restart
+run 30 us
+current_wave_config {pipelinedcpu_tb_behav.wcfg}
+add_wave {{/pipelinedcpu_tb/cpu/memsys/trap_mem_v}} 
+current_wave_config {pipelinedcpu_tb_behav.wcfg}
+add_wave {{/pipelinedcpu_tb/cpu/memsys/u_ptw/fault_cause}} 
+restart
+run 30 us
+current_wave_config {pipelinedcpu_tb_behav.wcfg}
+add_wave {{/pipelinedcpu_tb/cpu/memsys/u_ptw/m_a}} 
+current_wave_config {pipelinedcpu_tb_behav.wcfg}
+add_wave {{/pipelinedcpu_tb/cpu/memsys/u_ptw/pte1}} 
+restart
+run 30 us
+current_wave_config {pipelinedcpu_tb_behav.wcfg}
+add_wave {{/pipelinedcpu_tb/cpu/memsys/u_ptw/pte0}} 
+restart
+run 30 us
+current_wave_config {pipelinedcpu_tb_behav.wcfg}
+add_wave {{/pipelinedcpu_tb/cpu/memsys/u_ptw/st}} 
+restart
+run 30 us

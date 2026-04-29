@@ -1,0 +1,6 @@
+SOFTWARE_ROOT = ..
+A_SOURCES = RISCVtest01.S
+C_SOURCES = 
+PROGNAME = RISCVtest01
+
+include $(SOFTWARE_ROOT)/makesystem/RISCVparent.mk

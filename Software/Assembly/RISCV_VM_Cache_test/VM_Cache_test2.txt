@@ -1,0 +1,100 @@
+# vm_Cache_test — Sv32 + D$ eviction + alias check
+# Uses only: LUI,JAL,JALR,BEQ,BNE,LW,SW,ADDI,XORI,ORI,ANDI,SLLI,SRLI,SRAI,ADD,SUB,SLT,XOR,OR,AND
+#            M ops allowed (unused), CSR (CSRRW/CSRRS), MRET/ECALL, FENCE.I, SRET, SFENCE.VMA
+# Assumptions:
+#   - L1 @ PA 0x00004000, L0 @ PA 0x00005000
+#   - PTE bits [9:2] = {U,G,A,D,X,W,R,V} (V=bit0, R=1, W=2, X=3, D=4, A=5)
+#   - satp = MODE(01)<<30 | PPN(L1) = 0x4000_0004
+
+        .option norvc
+        .text
+        .globl _start
+_start:
+        # t0 = 0x00004000 (L1 root), t1 = 0x00005000 (L0 table, 1 KiB)
+        lui     t0, 0x4
+        addi    t0, t0, 0              # t0 = 0x00004000
+        lui     t1, 0x5
+        addi    t1, t1, 0              # t1 = 0x00005000
+
+        # L1[0] = (PPN=0x5)<<10 | V=1  ==> 0x00001401
+        addi    t2, x0, 5
+        slli    t2, t2, 10
+        ori     t2, t2, 1
+        sw      t2, 0(t0)
+
+        # L0[0] : VA 0x0000_0000 -> PA 0x0000_0000, perms A|D|X|R|V = 0x003B
+        addi    t3, x0, 0x3B
+        sw      t3, 0(t1)
+
+        # L0[1] : VA 0x0000_1000 -> PA 0x0000_1000, perms A|D|W|R|V = 0x0437
+        addi    t3, x0, 0x437
+        sw      t3, 4(t1)
+
+        # L0[2] : Alias — VA 0x0000_2000 -> PA 0x0000_1000, perms A|D|W|R|V
+        addi    t3, x0, 0x437
+        sw      t3, 8(t1)
+
+        # Map a thrash region: L0[64..191] identity (512 KiB), perms A|D|W|R|V
+        addi    s0, x0, 64             # i = 64
+        addi    s1, x0, 192            # end = 192
+        addi    s2, x0, 0x37           # perms = 0x037
+map_more:
+        slli    s3, s0, 10             # entry = (PPN=i)<<10
+        or      s3, s3, s2             #        | perms
+        slli    s4, s0, 2              # byte offset = i*4
+        add     s5, t1, s4
+        sw      s3, 0(s5)
+        addi    s0, s0, 1
+        slt     s6, s0, s1
+        bne     s6, x0, map_more
+
+        # satp = MODE(01)<<30 | PPN(L1)=4 => 0x4000_0004
+        lui     t4, 0x40000
+        addi    t4, t4, 4
+        csrrw   x0, satp, t4
+
+        sfence.vma                     # flush TLBs after PTE writes
+        fence.i                        # I$ coherence (safe even if no code at new VA)
+
+        # === D-side store/load @ VA 0x1000 ===
+        lui     t5, 0x1                # t5 = 0x00001000
+        lui     t6, 0xCAFEC
+        addi    t6, t6, -0x542         # t6 = 0xCAFEBABE
+        sw      t6, 0(t5)
+        lw      t2, 0(t5)
+        addi    x0, x0, 0              # NOP (bubble for load->branch)
+        bne     t6, t2, fail_stage1
+
+        # === Force eviction of the 0x1000 line ===
+        # Thrash 512 KiB region at VA 0x00040000 with 32B stride
+        lui     a0, 0x4                # a0 = 0x00040000
+        lui     a1, 0x1                # a1 = 0x00010000
+        srli    a1, a1, 2              # a1 = 16384 = (512 KiB)/32B
+        addi    a2, x0, 32             # stride = 32B
+thrash:
+        sw      x0, 0(a0)              # touch each line
+        add     a0, a0, a2
+        addi    a1, a1, -1
+        bne     a1, x0, thrash
+
+        # === Reload from same VA (must come from memory after eviction) ===
+        lui     a0, 0x1                # a0 = 0x00001000
+        lw      a1, 0(a0)
+        addi    x0, x0, 0              # NOP
+        bne     a1, t6, fail_stage2
+
+        # === Reload via alias VA 0x2000 -> PA 0x1000 ===
+        lui     a0, 0x2                # a0 = 0x00002000
+        lw      a1, 0(a0)
+        addi    x0, x0, 0              # NOP
+        bne     a1, t6, fail_stage3
+
+success:
+        jal     x0, success
+
+fail_stage1:
+        jal     x0, fail_stage1        # SW->LW immediate mismatch
+fail_stage2:
+        jal     x0, fail_stage2        # post-eviction reload mismatch
+fail_stage3:
+        jal     x0, fail_stage3        # alias VA reload mismatch

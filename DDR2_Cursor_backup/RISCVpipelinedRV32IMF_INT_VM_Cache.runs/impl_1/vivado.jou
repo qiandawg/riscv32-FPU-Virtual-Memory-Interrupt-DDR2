@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Sun Apr 26 17:19:44 2026
+# Process ID         : 48016
+# Current directory  : C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.runs/impl_1
+# Command line       : vivado.exe -log mfp_nexys4_ddr.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source mfp_nexys4_ddr.tcl -notrace
+# Log file           : C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.runs/impl_1/mfp_nexys4_ddr.vdi
+# Journal file       : C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.runs/impl_1\vivado.jou
+# Running On         : QianPC
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : 12th Gen Intel(R) Core(TM) i9-12900H
+# CPU Frequency      : 2918 MHz
+# CPU Physical cores : 14
+# CPU Logical cores  : 20
+# Host memory        : 42617 MB
+# Swap memory        : 103754 MB
+# Total Virtual      : 146372 MB
+# Available Virtual  : 110383 MB
+#-----------------------------------------------------------
+source mfp_nexys4_ddr.tcl -notrace

@@ -1,0 +1,6 @@
+SOFTWARE_ROOT = ..
+A_SOURCES = RISCVSwitchLED7Seg.S
+C_SOURCES = 
+PROGNAME = RISCVSwitchLED7Seg
+
+include $(SOFTWARE_ROOT)/makesystem/RISCVWinparent.mk

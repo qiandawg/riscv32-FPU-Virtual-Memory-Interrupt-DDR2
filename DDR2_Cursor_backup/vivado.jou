@@ -1,0 +1,618 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Sun Apr 19 15:15:41 2026
+# Process ID         : 25088
+# Current directory  : C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent33512 C:\JHU_Classes\Spring2026_DDR2\DDR2_Cursor\RISCVpipelinedRV32IMF_INT_VM_Cache.xpr
+# Log file           : C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/vivado.log
+# Journal file       : C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor\vivado.jou
+# Running On         : QianPC
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : 12th Gen Intel(R) Core(TM) i9-12900H
+# CPU Frequency      : 2918 MHz
+# CPU Physical cores : 14
+# CPU Logical cores  : 20
+# Host memory        : 42617 MB
+# Swap memory        : 2684 MB
+# Total Virtual      : 45302 MB
+# Available Virtual  : 18232 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.xpr
+create_ip -name mig_7series -vendor xilinx.com -library ip -version 4.2 -module_name mig
+set_property -dict [list \
+  CONFIG.ARESETN.INSERT_VIP {0} \
+  CONFIG.BOARD_MIG_PARAM {Custom} \
+  CONFIG.C0_ARESETN.INSERT_VIP {0} \
+  CONFIG.C0_CLOCK.INSERT_VIP {0} \
+  CONFIG.C0_DDR2_RESET.INSERT_VIP {0} \
+  CONFIG.C0_DDR3_RESET.INSERT_VIP {0} \
+  CONFIG.C0_LPDDR2_RESET.INSERT_VIP {0} \
+  CONFIG.C0_MMCM_CLKOUT0.INSERT_VIP {0} \
+  CONFIG.C0_MMCM_CLKOUT1.INSERT_VIP {0} \
+  CONFIG.C0_MMCM_CLKOUT2.INSERT_VIP {0} \
+  CONFIG.C0_MMCM_CLKOUT3.INSERT_VIP {0} \
+  CONFIG.C0_MMCM_CLKOUT4.INSERT_VIP {0} \
+  CONFIG.C0_QDRIIP_RESET.INSERT_VIP {0} \
+  CONFIG.C0_RESET.INSERT_VIP {0} \
+  CONFIG.C0_RLDIII_RESET.INSERT_VIP {0} \
+  CONFIG.C0_RLDII_RESET.INSERT_VIP {0} \
+  CONFIG.C0_SYS_CLK_I.INSERT_VIP {0} \
+  CONFIG.C1_ARESETN.INSERT_VIP {0} \
+  CONFIG.C1_CLOCK.INSERT_VIP {0} \
+  CONFIG.C1_DDR2_RESET.INSERT_VIP {0} \
+  CONFIG.C1_DDR3_RESET.INSERT_VIP {0} \
+  CONFIG.C1_LPDDR2_RESET.INSERT_VIP {0} \
+  CONFIG.C1_MMCM_CLKOUT0.INSERT_VIP {0} \
+  CONFIG.C1_MMCM_CLKOUT1.INSERT_VIP {0} \
+  CONFIG.C1_MMCM_CLKOUT2.INSERT_VIP {0} \
+  CONFIG.C1_MMCM_CLKOUT3.INSERT_VIP {0} \
+  CONFIG.C1_MMCM_CLKOUT4.INSERT_VIP {0} \
+  CONFIG.C1_QDRIIP_RESET.INSERT_VIP {0} \
+  CONFIG.C1_RESET.INSERT_VIP {0} \
+  CONFIG.C1_RLDIII_RESET.INSERT_VIP {0} \
+  CONFIG.C1_RLDII_RESET.INSERT_VIP {0} \
+  CONFIG.C1_SYS_CLK_I.INSERT_VIP {0} \
+  CONFIG.C2_ARESETN.INSERT_VIP {0} \
+  CONFIG.C2_CLOCK.INSERT_VIP {0} \
+  CONFIG.C2_DDR2_RESET.INSERT_VIP {0} \
+  CONFIG.C2_DDR3_RESET.INSERT_VIP {0} \
+  CONFIG.C2_LPDDR2_RESET.INSERT_VIP {0} \
+  CONFIG.C2_MMCM_CLKOUT0.INSERT_VIP {0} \
+  CONFIG.C2_MMCM_CLKOUT1.INSERT_VIP {0} \
+  CONFIG.C2_MMCM_CLKOUT2.INSERT_VIP {0} \
+  CONFIG.C2_MMCM_CLKOUT3.INSERT_VIP {0} \
+  CONFIG.C2_MMCM_CLKOUT4.INSERT_VIP {0} \
+  CONFIG.C2_QDRIIP_RESET.INSERT_VIP {0} \
+  CONFIG.C2_RESET.INSERT_VIP {0} \
+  CONFIG.C2_RLDIII_RESET.INSERT_VIP {0} \
+  CONFIG.C2_RLDII_RESET.INSERT_VIP {0} \
+  CONFIG.C2_SYS_CLK_I.INSERT_VIP {0} \
+  CONFIG.C3_ARESETN.INSERT_VIP {0} \
+  CONFIG.C3_CLOCK.INSERT_VIP {0} \
+  CONFIG.C3_DDR2_RESET.INSERT_VIP {0} \
+  CONFIG.C3_DDR3_RESET.INSERT_VIP {0} \
+  CONFIG.C3_LPDDR2_RESET.INSERT_VIP {0} \
+  CONFIG.C3_MMCM_CLKOUT0.INSERT_VIP {0} \
+  CONFIG.C3_MMCM_CLKOUT1.INSERT_VIP {0} \
+  CONFIG.C3_MMCM_CLKOUT2.INSERT_VIP {0} \
+  CONFIG.C3_MMCM_CLKOUT3.INSERT_VIP {0} \
+  CONFIG.C3_MMCM_CLKOUT4.INSERT_VIP {0} \
+  CONFIG.C3_QDRIIP_RESET.INSERT_VIP {0} \
+  CONFIG.C3_RESET.INSERT_VIP {0} \
+  CONFIG.C3_RLDIII_RESET.INSERT_VIP {0} \
+  CONFIG.C3_RLDII_RESET.INSERT_VIP {0} \
+  CONFIG.C3_SYS_CLK_I.INSERT_VIP {0} \
+  CONFIG.C4_ARESETN.INSERT_VIP {0} \
+  CONFIG.C4_CLOCK.INSERT_VIP {0} \
+  CONFIG.C4_DDR2_RESET.INSERT_VIP {0} \
+  CONFIG.C4_DDR3_RESET.INSERT_VIP {0} \
+  CONFIG.C4_LPDDR2_RESET.INSERT_VIP {0} \
+  CONFIG.C4_MMCM_CLKOUT0.INSERT_VIP {0} \
+  CONFIG.C4_MMCM_CLKOUT1.INSERT_VIP {0} \
+  CONFIG.C4_MMCM_CLKOUT2.INSERT_VIP {0} \
+  CONFIG.C4_MMCM_CLKOUT3.INSERT_VIP {0} \
+  CONFIG.C4_MMCM_CLKOUT4.INSERT_VIP {0} \
+  CONFIG.C4_QDRIIP_RESET.INSERT_VIP {0} \
+  CONFIG.C4_RESET.INSERT_VIP {0} \
+  CONFIG.C4_RLDIII_RESET.INSERT_VIP {0} \
+  CONFIG.C4_RLDII_RESET.INSERT_VIP {0} \
+  CONFIG.C4_SYS_CLK_I.INSERT_VIP {0} \
+  CONFIG.C5_ARESETN.INSERT_VIP {0} \
+  CONFIG.C5_CLOCK.INSERT_VIP {0} \
+  CONFIG.C5_DDR2_RESET.INSERT_VIP {0} \
+  CONFIG.C5_DDR3_RESET.INSERT_VIP {0} \
+  CONFIG.C5_LPDDR2_RESET.INSERT_VIP {0} \
+  CONFIG.C5_MMCM_CLKOUT0.INSERT_VIP {0} \
+  CONFIG.C5_MMCM_CLKOUT1.INSERT_VIP {0} \
+  CONFIG.C5_MMCM_CLKOUT2.INSERT_VIP {0} \
+  CONFIG.C5_MMCM_CLKOUT3.INSERT_VIP {0} \
+  CONFIG.C5_MMCM_CLKOUT4.INSERT_VIP {0} \
+  CONFIG.C5_QDRIIP_RESET.INSERT_VIP {0} \
+  CONFIG.C5_RESET.INSERT_VIP {0} \
+  CONFIG.C5_RLDIII_RESET.INSERT_VIP {0} \
+  CONFIG.C5_RLDII_RESET.INSERT_VIP {0} \
+  CONFIG.C5_SYS_CLK_I.INSERT_VIP {0} \
+  CONFIG.C6_ARESETN.INSERT_VIP {0} \
+  CONFIG.C6_CLOCK.INSERT_VIP {0} \
+  CONFIG.C6_DDR2_RESET.INSERT_VIP {0} \
+  CONFIG.C6_DDR3_RESET.INSERT_VIP {0} \
+  CONFIG.C6_LPDDR2_RESET.INSERT_VIP {0} \
+  CONFIG.C6_MMCM_CLKOUT0.INSERT_VIP {0} \
+  CONFIG.C6_MMCM_CLKOUT1.INSERT_VIP {0} \
+  CONFIG.C6_MMCM_CLKOUT2.INSERT_VIP {0} \
+  CONFIG.C6_MMCM_CLKOUT3.INSERT_VIP {0} \
+  CONFIG.C6_MMCM_CLKOUT4.INSERT_VIP {0} \
+  CONFIG.C6_QDRIIP_RESET.INSERT_VIP {0} \
+  CONFIG.C6_RESET.INSERT_VIP {0} \
+  CONFIG.C6_RLDIII_RESET.INSERT_VIP {0} \
+  CONFIG.C6_RLDII_RESET.INSERT_VIP {0} \
+  CONFIG.C6_SYS_CLK_I.INSERT_VIP {0} \
+  CONFIG.C7_ARESETN.INSERT_VIP {0} \
+  CONFIG.C7_CLOCK.INSERT_VIP {0} \
+  CONFIG.C7_DDR2_RESET.INSERT_VIP {0} \
+  CONFIG.C7_DDR3_RESET.INSERT_VIP {0} \
+  CONFIG.C7_LPDDR2_RESET.INSERT_VIP {0} \
+  CONFIG.C7_MMCM_CLKOUT0.INSERT_VIP {0} \
+  CONFIG.C7_MMCM_CLKOUT1.INSERT_VIP {0} \
+  CONFIG.C7_MMCM_CLKOUT2.INSERT_VIP {0} \
+  CONFIG.C7_MMCM_CLKOUT3.INSERT_VIP {0} \
+  CONFIG.C7_MMCM_CLKOUT4.INSERT_VIP {0} \
+  CONFIG.C7_QDRIIP_RESET.INSERT_VIP {0} \
+  CONFIG.C7_RESET.INSERT_VIP {0} \
+  CONFIG.C7_RLDIII_RESET.INSERT_VIP {0} \
+  CONFIG.C7_RLDII_RESET.INSERT_VIP {0} \
+  CONFIG.C7_SYS_CLK_I.INSERT_VIP {0} \
+  CONFIG.CLK_REF_I.INSERT_VIP {0} \
+  CONFIG.CLOCK.INSERT_VIP {0} \
+  CONFIG.DDR2_RESET.INSERT_VIP {0} \
+  CONFIG.DDR3_RESET.INSERT_VIP {0} \
+  CONFIG.LPDDR2_RESET.INSERT_VIP {0} \
+  CONFIG.MIG_DONT_TOUCH_PARAM {Custom} \
+  CONFIG.MMCM_CLKOUT0.INSERT_VIP {0} \
+  CONFIG.MMCM_CLKOUT1.INSERT_VIP {0} \
+  CONFIG.MMCM_CLKOUT2.INSERT_VIP {0} \
+  CONFIG.MMCM_CLKOUT3.INSERT_VIP {0} \
+  CONFIG.MMCM_CLKOUT4.INSERT_VIP {0} \
+  CONFIG.QDRIIP_RESET.INSERT_VIP {0} \
+  CONFIG.RESET.INSERT_VIP {0} \
+  CONFIG.RESET_BOARD_INTERFACE {Custom} \
+  CONFIG.RLDIII_RESET.INSERT_VIP {0} \
+  CONFIG.RLDII_RESET.INSERT_VIP {0} \
+  CONFIG.S0_AXI.INSERT_VIP {0} \
+  CONFIG.S0_AXI_CTRL.INSERT_VIP {0} \
+  CONFIG.S1_AXI.INSERT_VIP {0} \
+  CONFIG.S1_AXI_CTRL.INSERT_VIP {0} \
+  CONFIG.S2_AXI.INSERT_VIP {0} \
+  CONFIG.S2_AXI_CTRL.INSERT_VIP {0} \
+  CONFIG.S3_AXI.INSERT_VIP {0} \
+  CONFIG.S3_AXI_CTRL.INSERT_VIP {0} \
+  CONFIG.S4_AXI.INSERT_VIP {0} \
+  CONFIG.S4_AXI_CTRL.INSERT_VIP {0} \
+  CONFIG.S5_AXI.INSERT_VIP {0} \
+  CONFIG.S5_AXI_CTRL.INSERT_VIP {0} \
+  CONFIG.S6_AXI.INSERT_VIP {0} \
+  CONFIG.S6_AXI_CTRL.INSERT_VIP {0} \
+  CONFIG.S7_AXI.INSERT_VIP {0} \
+  CONFIG.S7_AXI_CTRL.INSERT_VIP {0} \
+  CONFIG.SYSTEM_RESET.INSERT_VIP {0} \
+  CONFIG.SYS_CLK_I.INSERT_VIP {0} \
+  CONFIG.S_AXI.INSERT_VIP {0} \
+  CONFIG.S_AXI_CTRL.INSERT_VIP {0} \
+  CONFIG.XML_INPUT_FILE {mig_a.prj} \
+] [get_ips mig]
+generate_target {instantiation_template} [get_files c:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/ip/mig_1/mig.xci]
+generate_target all [get_files  c:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/ip/mig_1/mig.xci]
+export_ip_user_files -of_objects [get_files c:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/ip/mig_1/mig.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/ip/mig_1/mig.xci]
+launch_runs mig_synth_1 -jobs 12
+wait_on_run mig_synth_1
+export_simulation -lib_map_path [list {modelsim=C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.cache/compile_simlib/modelsim} {questa=C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.cache/compile_simlib/questa} {riviera=C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.cache/compile_simlib/riviera} {activehdl=C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.cache/compile_simlib/activehdl}] -of_objects [get_files c:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/ip/mig_1/mig.xci] -directory C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.ip_user_files/sim_scripts -ip_user_files_dir C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.ip_user_files -ipstatic_source_dir C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.ip_user_files/ipstatic -use_ip_compiled_libs -force -quiet
+add_files -norecurse C:/JHU_Classes/Spring2026_DDR2/mig_example/mig_example.srcs/sources_1/ip/pll.xcix
+add_files -norecurse C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/new/io_def.vh
+add_files -norecurse {C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/new/flag_sync.v C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/VM_and_cache/physical_memory_hybrid.v C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/new/ff_sync.v C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/new/mem_example.v}
+reset_run synth_1
+launch_runs synth_1 -jobs 12
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 12
+wait_on_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1
+reset_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1
+reset_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.runs/impl_1/mfp_nexys4_ddr.bit} [get_hw_devices xc7a100t_0]
+set_property PROBES.FILE {C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.runs/impl_1/mfp_nexys4_ddr.ltx} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.runs/impl_1/mfp_nexys4_ddr.ltx} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.runs/impl_1/mfp_nexys4_ddr.ltx} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.runs/impl_1/mfp_nexys4_ddr.ltx} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.runs/impl_1/mfp_nexys4_ddr.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]]
+close_hw_manager
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.runs/impl_1/mfp_nexys4_ddr.bit} [get_hw_devices xc7a100t_0]
+set_property PROBES.FILE {C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.runs/impl_1/mfp_nexys4_ddr.ltx} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.runs/impl_1/mfp_nexys4_ddr.ltx} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.runs/impl_1/mfp_nexys4_ddr.ltx} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.runs/impl_1/mfp_nexys4_ddr.ltx} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.runs/impl_1/mfp_nexys4_ddr.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]]
+add_wave -into {hw_ila_data_1.wcfg} -radix hex { {pc} }
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]]
+write_hw_ila_data {C:\Users\lamqi\Downloads\iladata_4_23_2026_1201AM.ila} hw_ila_data_1
+save_wave_config {C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+close_hw_manager
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 20
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.runs/impl_1/mfp_nexys4_ddr.bit} [get_hw_devices xc7a100t_0]
+set_property PROBES.FILE {C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.runs/impl_1/mfp_nexys4_ddr.ltx} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.runs/impl_1/mfp_nexys4_ddr.ltx} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.runs/impl_1/mfp_nexys4_ddr.ltx} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.runs/impl_1/mfp_nexys4_ddr.ltx} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.runs/impl_1/mfp_nexys4_ddr.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]]
+add_wave -into {hw_ila_data_1.wcfg} -radix hex { {<const0>} {<const0>_1} {ext_mem_a} {ext_mem_a_1} {ext_mem_a_2} {ext_mem_access} {ext_mem_access_1} {ext_mem_dout} {ext_mem_ready} {ext_mem_st_data} {ext_mem_write} {i_cache_miss} {i_ecall} {ila_probe13} {inst} {intr} {IO_LED} {IO_Switch} {lock} {mal} {mfunc3} {mldst} {mm2reg} {mrd} {ms_if_ready} {ms_mem_ready} {ms_stall_req} {mwmem} {mwreg} {pc} {ptw_busy} {sel_i} {SI_Reset_N} {wpcir} {wpcir_redirect} }
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]]
+write_hw_ila_data {C:\Users\lamqi\Downloads\iladata.ila} hw_ila_data_1
+save_wave_config {C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+close_hw_manager
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 20
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.runs/impl_1/mfp_nexys4_ddr.bit} [get_hw_devices xc7a100t_0]
+set_property PROBES.FILE {C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.runs/impl_1/mfp_nexys4_ddr.ltx} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.runs/impl_1/mfp_nexys4_ddr.ltx} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]]
+set_property PROBES.FILE {C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.runs/impl_1/mfp_nexys4_ddr.ltx} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.runs/impl_1/mfp_nexys4_ddr.ltx} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.runs/impl_1/mfp_nexys4_ddr.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]]
+write_hw_ila_data {C:\Users\lamqi\Downloads\iladata1.ila} hw_ila_data_1
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]]
+add_wave -into {hw_ila_data_1.wcfg} -radix hex { {busy_ddr} {complete} {ddr2_complete} {ext_mem_a} {ext_mem_a_1} {ext_mem_a_2} {ext_mem_access} {ext_mem_access_1} {ext_mem_dout} {ext_mem_ready} {ext_mem_st_data} {ext_mem_write} {ila_probe13} {init_calib_complete} {inst} {IO_LED} {IO_Switch} {lock} {mal} {mem_en} {mem_rdy} {mem_wdf_rdy} {memex_ready} {memex_rstrobe} {memex_wstrobe} {mldst} {ms_if_ready} {ms_mem_ready} {ms_stall_req} {pc} {pending_ddr} {rw} {sel_i} {SI_Reset_N} {state} {strobe} {strobe_redge} {transaction_complete} {ui_clk_sync_rst} }
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]]
+write_hw_ila_data {C:\Users\lamqi\Downloads\iladata2.ila} hw_ila_data_1
+set_property TRIGGER_COMPARE_VALUE eq1'b1 [get_hw_probes strobe_redge -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]]
+set_property TRIGGER_COMPARE_VALUE eq1'bR [get_hw_probes strobe_redge -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]]
+set_property CONTROL.TRIGGER_POSITION 128 [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]]
+write_hw_ila_data {C:\Users\lamqi\Downloads\iladata_strobe_redge.ila} hw_ila_data_1
+set_property TRIGGER_COMPARE_VALUE eq1'bX [get_hw_probes strobe_redge -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]]
+set_property TRIGGER_COMPARE_VALUE eq1'bR [get_hw_probes pending_ddr -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]
+set_property TRIGGER_COMPARE_VALUE eq1'bX [get_hw_probes pending_ddr -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]]
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]
+upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]]
+set_property TRIGGER_COMPARE_VALUE eq1'bR [get_hw_probes pending_ddr -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]
+set_property TRIGGER_COMPARE_VALUE eq1'bX [get_hw_probes pending_ddr -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]]
+set_property TRIGGER_COMPARE_VALUE eq1'bR [get_hw_probes SI_Reset_N -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]]
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]
+upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]]
+write_hw_ila_data {C:\Users\lamqi\Downloads\SI_Reset_N.ila} hw_ila_data_1
+save_wave_config {C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+close_hw_manager
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 20
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.runs/impl_1/mfp_nexys4_ddr.bit} [get_hw_devices xc7a100t_0]
+set_property PROBES.FILE {C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.runs/impl_1/mfp_nexys4_ddr.ltx} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.runs/impl_1/mfp_nexys4_ddr.ltx} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]]
+set_property PROBES.FILE {C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.runs/impl_1/mfp_nexys4_ddr.ltx} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.runs/impl_1/mfp_nexys4_ddr.ltx} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.runs/impl_1/mfp_nexys4_ddr.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]]
+write_hw_ila_data {C:\Users\lamqi\Downloads\SI_Reset_N_Test2.ila} hw_ila_data_1
+set_property TRIGGER_COMPARE_VALUE eq1'bR [get_hw_probes strobe_redge -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]]
+set_property TRIGGER_COMPARE_VALUE eq1'bX [get_hw_probes SI_Reset_N -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]]
+write_hw_ila_data {C:\Users\lamqi\Downloads\strobe_redge_test2.ila} hw_ila_data_1
+save_wave_config {C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+close_hw_manager
+reset_run synth_1
+launch_runs synth_1 -jobs 20
+wait_on_run synth_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 20
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.runs/impl_1/mfp_nexys4_ddr.bit} [get_hw_devices xc7a100t_0]
+set_property PROBES.FILE {C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.runs/impl_1/mfp_nexys4_ddr.ltx} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.runs/impl_1/mfp_nexys4_ddr.ltx} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.runs/impl_1/mfp_nexys4_ddr.ltx} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.runs/impl_1/mfp_nexys4_ddr.ltx} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.runs/impl_1/mfp_nexys4_ddr.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]]
+set_property TRIGGER_COMPARE_VALUE eq1'bR [get_hw_probes SI_Reset_N -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]]
+set_property TRIGGER_COMPARE_VALUE eq1'bX [get_hw_probes strobe_redge -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]]
+write_hw_ila_data {C:\Users\lamqi\Downloads\strobe_redge1_4_25_26.ila} hw_ila_data_1
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]
+upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]]
+write_hw_ila_data {C:\Users\lamqi\Downloads\Steady_state1.ila} hw_ila_data_1
+set_property TRIGGER_COMPARE_VALUE eq1'bX [get_hw_probes SI_Reset_N -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]]
+set_property TRIGGER_COMPARE_VALUE eq16'bXXXX_XXXX_XXXX_XXXX [get_hw_probes IO_LED -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]]
+set_property TRIGGER_COMPARE_VALUE eq16'b1XXX_XXXX_XXXX_XXXX [get_hw_probes IO_LED -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]
+set_property TRIGGER_COMPARE_VALUE eq16'b1000_0000_0000_0000 [get_hw_probes IO_LED -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]]
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]
+upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]
+set_property TRIGGER_COMPARE_VALUE eq16'h8000 [get_hw_probes IO_LED -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]]
+set_property TRIGGER_COMPARE_VALUE eq16'hXXXX [get_hw_probes IO_LED -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]]
+set_property TRIGGER_COMPARE_VALUE eq1'bR [get_hw_probes memex_wstrobe -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]]
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]
+upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]]
+write_hw_ila_data {C:\Users\lamqi\Downloads\memex_wstrobe1.ila} hw_ila_data_1
+set_property TRIGGER_COMPARE_VALUE eq1'bX [get_hw_probes memex_wstrobe -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]]
+set_property TRIGGER_COMPARE_VALUE eq1'bF [get_hw_probes transaction_complete -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]]
+set_property TRIGGER_COMPARE_VALUE eq1'bR [get_hw_probes transaction_complete -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]]
+write_hw_ila_data {C:\Users\lamqi\Downloads\transaction_complete1.ila} hw_ila_data_1
+set_property TRIGGER_COMPARE_VALUE eq1'bX [get_hw_probes transaction_complete -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]]
+set_property TRIGGER_COMPARE_VALUE eq32'u0 [get_hw_probes pc -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]]
+set_property TRIGGER_COMPARE_VALUE eq32'h0000_0000 [get_hw_probes pc -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]]
+set_property TRIGGER_COMPARE_VALUE eq32'h0000_0060 [get_hw_probes pc -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]]
+write_hw_ila_data {C:\Users\lamqi\Downloads\pc_equals_60.ila} hw_ila_data_1
+set_property TRIGGER_COMPARE_VALUE eq1'b1 [get_hw_probes ext_mem_access -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]]
+set_property TRIGGER_COMPARE_VALUE eq1'b0 [get_hw_probes ext_mem_write -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]]
+set_property TRIGGER_COMPARE_VALUE eq1'b1 [get_hw_probes ms_stall_req -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]]
+write_hw_ila_data {C:\Users\lamqi\Downloads\global_and_trigger_1.ila} hw_ila_data_1
+set_property TRIGGER_COMPARE_VALUE eq1'b0 [get_hw_probes ui_clk_sync_rst -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]]
+write_hw_ila_data {C:\Users\lamqi\Downloads\global_and2.ila} hw_ila_data_1
+save_wave_config {C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+close_hw_manager
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 20
+wait_on_run impl_1
+reset_run impl_1 -prev_step 
+reset_run impl_1 -prev_step 
+reset_run synth_1
+launch_runs synth_1 -jobs 20
+wait_on_run synth_1
+launch_runs impl_1 -jobs 20
+wait_on_run impl_1
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -jobs 20
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 20
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.runs/impl_1/mfp_nexys4_ddr.bit} [get_hw_devices xc7a100t_0]
+set_property PROBES.FILE {C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.runs/impl_1/mfp_nexys4_ddr.ltx} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.runs/impl_1/mfp_nexys4_ddr.ltx} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.runs/impl_1/mfp_nexys4_ddr.ltx} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.runs/impl_1/mfp_nexys4_ddr.ltx} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.runs/impl_1/mfp_nexys4_ddr.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]]
+set_property TRIGGER_COMPARE_VALUE eq1'bX [get_hw_probes ms_stall_req -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]]
+set_property TRIGGER_COMPARE_VALUE eq1'bX [get_hw_probes ui_clk_sync_rst -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]]
+set_property TRIGGER_COMPARE_VALUE eq1'bX [get_hw_probes ext_mem_write -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]]
+set_property TRIGGER_COMPARE_VALUE eq1'bX [get_hw_probes ext_mem_access -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]]
+set_property TRIGGER_COMPARE_VALUE eq32'h0000_2014 [get_hw_probes pc -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]]
+set_property TRIGGER_COMPARE_VALUE eq1'b1 [get_hw_probes ext_mem_access -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]]
+set_property TRIGGER_COMPARE_VALUE eq1'b1 [get_hw_probes ext_mem_write -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]]
+set_property PROBES.FILE {C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.runs/impl_1/mfp_nexys4_ddr.ltx} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.runs/impl_1/mfp_nexys4_ddr.ltx} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.runs/impl_1/mfp_nexys4_ddr.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]
+set_property TRIGGER_COMPARE_VALUE eq1'bX [get_hw_probes ext_mem_access -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]]
+set_property TRIGGER_COMPARE_VALUE eq1'bX [get_hw_probes ext_mem_write -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]]
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]
+upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]]
+set_property TRIGGER_COMPARE_VALUE eq1'b1 [get_hw_probes ext_mem_access -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]]
+set_property TRIGGER_COMPARE_VALUE eq1'b1 [get_hw_probes ext_mem_write -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]
+write_hw_ila_data -csv_file {C:\Users\lamqi\Downloads\pc_equals_2014.csv} hw_ila_data_1
+set_property TRIGGER_COMPARE_VALUE eq32'h0000_2044 [get_hw_probes pc -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]]
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]
+upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]
+set_property TRIGGER_COMPARE_VALUE eq1'bX [get_hw_probes ext_mem_access -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]]
+set_property TRIGGER_COMPARE_VALUE eq1'bX [get_hw_probes ext_mem_write -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]]
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]
+upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]
+set_property PROBES.FILE {C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.runs/impl_1/mfp_nexys4_ddr.ltx} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.runs/impl_1/mfp_nexys4_ddr.ltx} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.runs/impl_1/mfp_nexys4_ddr.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+set_property PROBES.FILE {C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.runs/impl_1/mfp_nexys4_ddr.ltx} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.runs/impl_1/mfp_nexys4_ddr.ltx} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.runs/impl_1/mfp_nexys4_ddr.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]
+set_property TRIGGER_COMPARE_VALUE eq32'h0000_0060 [get_hw_probes pc -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]]
+set_property TRIGGER_COMPARE_VALUE eq1'b1 [get_hw_probes ms_stall_req -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]]
+set_property TRIGGER_COMPARE_VALUE eq1'b1 [get_hw_probes ext_mem_access -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]]
+set_property TRIGGER_COMPARE_VALUE eq1'b1 [get_hw_probes ext_mem_write -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]]
+set_property TRIGGER_COMPARE_VALUE eq1'b0 [get_hw_probes ext_mem_write -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]]
+set_property TRIGGER_COMPARE_VALUE eq1'b0 [get_hw_probes ui_clk_sync_rst -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]]
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]
+upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]]
+write_hw_ila_data -csv_file {C:\Users\lamqi\Downloads\trigger3_apr_26_2026.csv} hw_ila_data_1
+save_wave_config {C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+close_hw_manager
+launch_simulation
+open_wave_config C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sim_1/imports/RISCVpipelineRV32IM/pipelinedcpu_tb_behav.wcfg
+source pipelinedcpu_tb.tcl
+run 30 us
+relaunch_sim
+run 30 us
+reset_run synth_1
+launch_runs synth_1 -jobs 20
+wait_on_run synth_1
+launch_runs impl_1 -jobs 20
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 20
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.runs/impl_1/mfp_nexys4_ddr.bit} [get_hw_devices xc7a100t_0]
+set_property PROBES.FILE {C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.runs/impl_1/mfp_nexys4_ddr.ltx} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.runs/impl_1/mfp_nexys4_ddr.ltx} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]]
+set_property PROBES.FILE {C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.runs/impl_1/mfp_nexys4_ddr.ltx} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.runs/impl_1/mfp_nexys4_ddr.ltx} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.runs/impl_1/mfp_nexys4_ddr.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]]
+write_hw_ila_data -csv_file {C:\Users\lamqi\Downloads\LED_0_lit.csv} hw_ila_data_1
+set_property TRIGGER_COMPARE_VALUE eq32'h0000_201C [get_hw_probes pc -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]]
+close_hw_manager
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.runs/impl_1/mfp_nexys4_ddr.bit} [get_hw_devices xc7a100t_0]
+set_property PROBES.FILE {C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.runs/impl_1/mfp_nexys4_ddr.ltx} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.runs/impl_1/mfp_nexys4_ddr.ltx} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.runs/impl_1/mfp_nexys4_ddr.ltx} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.runs/impl_1/mfp_nexys4_ddr.ltx} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.runs/impl_1/mfp_nexys4_ddr.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]
+upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]
+set_property TRIGGER_COMPARE_VALUE eq1'bX [get_hw_probes ms_stall_req -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]]
+set_property TRIGGER_COMPARE_VALUE eq1'bX [get_hw_probes ext_mem_access -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]]
+set_property TRIGGER_COMPARE_VALUE eq1'bX [get_hw_probes ext_mem_write -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]]
+set_property TRIGGER_COMPARE_VALUE eq1'bX [get_hw_probes ui_clk_sync_rst -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"my_ila"}]]
+write_hw_ila_data -csv_file {C:\Users\lamqi\Downloads\working.csv} hw_ila_data_1

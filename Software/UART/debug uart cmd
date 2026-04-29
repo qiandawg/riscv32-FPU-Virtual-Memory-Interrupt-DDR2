@@ -1,0 +1,9 @@
+h - halt
+s - step
+e - reset
+g - go
+a - set address
+r - read
+w - write
+i - IMEM select
+d - DMEM select

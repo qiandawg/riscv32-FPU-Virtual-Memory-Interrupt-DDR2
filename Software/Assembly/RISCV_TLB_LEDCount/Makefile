@@ -1,0 +1,6 @@
+SOFTWARE_ROOT = ..
+A_SOURCES = RISCVLEDCount.S
+C_SOURCES = 
+PROGNAME = RISCVLEDCount
+
+include $(SOFTWARE_ROOT)/makesystem/RISCVWinparent.mk

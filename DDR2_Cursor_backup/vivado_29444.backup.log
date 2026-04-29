@@ -1,0 +1,419 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Tue Feb  3 20:35:31 2026
+# Process ID         : 29444
+# Current directory  : C:/RISCV_prime/riscv-prod/RTL/CPUs/RISCVpipelinedRV32IMF_INT_VM_Cache
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent10628 C:\RISCV_prime\riscv-prod\RTL\CPUs\RISCVpipelinedRV32IMF_INT_VM_Cache\RISCVpipelinedRV32IMF_INT_VM_Cache.xpr
+# Log file           : C:/RISCV_prime/riscv-prod/RTL/CPUs/RISCVpipelinedRV32IMF_INT_VM_Cache/vivado.log
+# Journal file       : C:/RISCV_prime/riscv-prod/RTL/CPUs/RISCVpipelinedRV32IMF_INT_VM_Cache\vivado.jou
+# Running On         : QianPC
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : 12th Gen Intel(R) Core(TM) i9-12900H
+# CPU Frequency      : 2918 MHz
+# CPU Physical cores : 14
+# CPU Logical cores  : 20
+# Host memory        : 42617 MB
+# Swap memory        : 5100 MB
+# Total Virtual      : 47718 MB
+# Available Virtual  : 28697 MB
+#-----------------------------------------------------------
+WARNING: [Runs 36-547] User Strategy 'Vivado Implementation Defaults' from file 'C:\Users\lamqi\AppData\Roaming/Xilinx/Vivado/2024.2/strategies/Vivado Implementation Defaults.Vivado Implementation 2020.psg' discarded because strategy with same name already parsed from 'C:/Xilinx/Vivado/2024.2/strategies/VDI2020.psg'
+WARNING: [Runs 36-547] User Strategy 'Vivado Implementation Defaults' from file 'C:\Users\lamqi\AppData\Roaming/Xilinx/Vivado/2024.2/strategies/Vivado Implementation Defaults_2.Vivado Implementation 2020.psg' discarded because strategy with same name already parsed from 'C:/Xilinx/Vivado/2024.2/strategies/VDI2020.psg'
+start_gui
+open_project C:/RISCV_prime/riscv-prod/RTL/CPUs/RISCVpipelinedRV32IMF_INT_VM_Cache/RISCVpipelinedRV32IMF_INT_VM_Cache.xpr
+Scanning sources...
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at C:/Xilinx/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at C:/Xilinx/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at C:/Xilinx/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.2/data/ip'.
+open_project: Time (s): cpu = 00:01:33 ; elapsed = 00:01:02 . Memory (MB): peak = 1674.602 ; gain = 474.297
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'pipelinedcpu_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/RISCV_prime/riscv-prod/RTL/CPUs/RISCVpipelinedRV32IMF_INT_VM_Cache/RISCVpipelinedRV32IMF_INT_VM_Cache.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2024.2/tps/boost_1_72_0'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2024.2/data/xsim/xsim.ini' copied to run dir:'C:/RISCV_prime/riscv-prod/RTL/CPUs/RISCVpipelinedRV32IMF_INT_VM_Cache/RISCVpipelinedRV32IMF_INT_VM_Cache.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'pipelinedcpu_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/RISCV_prime/riscv-prod/RTL/CPUs/RISCVpipelinedRV32IMF_INT_VM_Cache/RISCVpipelinedRV32IMF_INT_VM_Cache.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj pipelinedcpu_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/RISCV_prime/riscv-prod/RTL/CPUs/RISCVpipelinedRV32IMF_INT_VM_Cache/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/mips-cpu/RTL/Common/mfp_ahb_const.vh" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/RISCV_prime/riscv-prod/RTL/CPUs/RISCVpipelinedRV32IMF_INT_VM_Cache/RISCVpipelinedRV32IMF_INT_VM_Cache.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/RISCV_prime/riscv-prod/RTL/CPUs/RISCVpipelinedRV32IMF_INT_VM_Cache/RISCVpipelinedRV32IMF_INT_VM_Cache.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/RISCV_prime/riscv-prod/RTL/CPUs/RISCVpipelinedRV32IMF_INT_VM_Cache/RISCVpipelinedRV32IMF_INT_VM_Cache.gen/sources_1/ip/ila_0/sim/ila_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ila_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/RISCV_prime/riscv-prod/RTL/CPUs/RISCVpipelinedRV32IMF_INT_VM_Cache/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/RISC-Vrv32m/Basic_and.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Basic_and
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/RISCV_prime/riscv-prod/RTL/CPUs/RISCVpipelinedRV32IMF_INT_VM_Cache/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/RISC-Vrv32m/PulseGenerator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PulseGenerator
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/RISCV_prime/riscv-prod/RTL/CPUs/RISCVpipelinedRV32IMF_INT_VM_Cache/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/RISC-Vrv32m/SDivide.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SDivide
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/RISCV_prime/riscv-prod/RTL/CPUs/RISCVpipelinedRV32IMF_INT_VM_Cache/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/mips-cpu/RTL/Common/io/SPI_Master.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SPI_Master
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/RISCV_prime/riscv-prod/RTL/CPUs/RISCVpipelinedRV32IMF_INT_VM_Cache/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/RISC-Vrv32m/Start_Div.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Start_Div
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/RISCV_prime/riscv-prod/RTL/CPUs/RISCVpipelinedRV32IMF_INT_VM_Cache/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/mips-cpu/RTL/3rd Party IP/uart-debug/UART_RX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module UART_RX
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/RISCV_prime/riscv-prod/RTL/CPUs/RISCVpipelinedRV32IMF_INT_VM_Cache/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/mips-cpu/RTL/3rd Party IP/uart-debug/UART_TX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module UART_TX
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/RISCV_prime/riscv-prod/RTL/CPUs/RISCVpipelinedRV32IMF_INT_VM_Cache/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/RISC-Vrv32m/UDivide.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module UDivide
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/RISCV_prime/riscv-prod/RTL/CPUs/RISCVpipelinedRV32IMF_INT_VM_Cache/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/RISCVpipelinecode/alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/RISCV_prime/riscv-prod/RTL/CPUs/RISCVpipelinedRV32IMF_INT_VM_Cache/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/RISCVpipelinecode/branch_addr.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module branch_addr
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/RISCV_prime/riscv-prod/RTL/CPUs/RISCVpipelinedRV32IMF_INT_VM_Cache/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/mips-cpu/RTL/Common/io/buzzer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module buzzer
+INFO: [VRFC 10-311] analyzing module microsCounter
+INFO: [VRFC 10-311] analyzing module toggleBuzz
+INFO: [VRFC 10-311] analyzing module regR
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/RISCV_prime/riscv-prod/RTL/CPUs/RISCVpipelinedRV32IMF_INT_VM_Cache/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/mips-cpu/RTL/3rd Party IP/uart-debug/cmdproc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cmdproc
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/RISCV_prime/riscv-prod/RTL/CPUs/RISCVpipelinedRV32IMF_INT_VM_Cache/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/mips-cpu/RTL/Common/io/cpugpio.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpugpio
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/RISCV_prime/riscv-prod/RTL/CPUs/RISCVpipelinedRV32IMF_INT_VM_Cache/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/RISC-Vrv32m/dffe.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dffe
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/RISCV_prime/riscv-prod/RTL/CPUs/RISCVpipelinedRV32IMF_INT_VM_Cache/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/RISC-Vrv32m/dffe3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dffe3
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/RISCV_prime/riscv-prod/RTL/CPUs/RISCVpipelinedRV32IMF_INT_VM_Cache/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/RISCVpipelinecode/dffe32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dffe32
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/RISCV_prime/riscv-prod/RTL/CPUs/RISCVpipelinedRV32IMF_INT_VM_Cache/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/RISC-Vrv32m/dffe5.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dffe5
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/RISCV_prime/riscv-prod/RTL/CPUs/RISCVpipelinedRV32IMF_INT_VM_Cache/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/RISCVpipelinecode/imme.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module imme
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/RISCV_prime/riscv-prod/RTL/CPUs/RISCVpipelinedRV32IMF_INT_VM_Cache/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/RISCVpipelinecode/jal_addr.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module jal_addr
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/RISCV_prime/riscv-prod/RTL/CPUs/RISCVpipelinedRV32IMF_INT_VM_Cache/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/RISCVpipelinecode/jalr_addr.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module jalr_addr
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/RISCV_prime/riscv-prod/RTL/CPUs/RISCVpipelinedRV32IMF_INT_VM_Cache/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/mips-cpu/RTL/Common/io/milliscounter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module milliscounter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/RISCV_prime/riscv-prod/RTL/CPUs/RISCVpipelinedRV32IMF_INT_VM_Cache/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/RISC-Vrv32m/mul_div.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mul_div
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/RISCV_prime/riscv-prod/RTL/CPUs/RISCVpipelinedRV32IMF_INT_VM_Cache/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/RISC-Vrv32m/multiplysignedsigned.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module multiplysignedsigned
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/RISCV_prime/riscv-prod/RTL/CPUs/RISCVpipelinedRV32IMF_INT_VM_Cache/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/RISC-Vrv32m/multiplysignedunsigned.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module multiplysignedunsigned
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/RISCV_prime/riscv-prod/RTL/CPUs/RISCVpipelinedRV32IMF_INT_VM_Cache/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/RISC-Vrv32m/multiplyunsignedunsigned.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module multiplyunsignedunsigned
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/RISCV_prime/riscv-prod/RTL/CPUs/RISCVpipelinedRV32IMF_INT_VM_Cache/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/RISCVpipelinecode/mux2x32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux2x32
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/RISCV_prime/riscv-prod/RTL/CPUs/RISCVpipelinedRV32IMF_INT_VM_Cache/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/RISCVpipelinecode/mux4x32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux4x32
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/RISCV_prime/riscv-prod/RTL/CPUs/RISCVpipelinedRV32IMF_INT_VM_Cache/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/RISC-Vrv32m/mux8x32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux8x32
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/RISCV_prime/riscv-prod/RTL/CPUs/RISCVpipelinedRV32IMF_INT_VM_Cache/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/RISCVpipelinecode/pc4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pc4
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/RISCV_prime/riscv-prod/RTL/CPUs/RISCVpipelinedRV32IMF_INT_VM_Cache/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/RISCVpipelinecode/pipelinedcpu_decode.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pipelinedcpu_decode
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/RISCV_prime/riscv-prod/RTL/CPUs/RISCVpipelinedRV32IMF_INT_VM_Cache/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/RISCVpipelinecode/pl_computer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pl_computer
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/RISCV_prime/riscv-prod/RTL/CPUs/RISCVpipelinedRV32IMF_INT_VM_Cache/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/RISCVpipelinecode/pl_id_cu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pl_id_cu
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/RISCV_prime/riscv-prod/RTL/CPUs/RISCVpipelinedRV32IMF_INT_VM_Cache/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/RISCVpipelinecode/pl_reg_de.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pl_reg_de
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/RISCV_prime/riscv-prod/RTL/CPUs/RISCVpipelinedRV32IMF_INT_VM_Cache/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/RISCVpipelinecode/pl_reg_em.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pl_reg_em
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/RISCV_prime/riscv-prod/RTL/CPUs/RISCVpipelinedRV32IMF_INT_VM_Cache/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/RISCVpipelinecode/pl_reg_if.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pl_reg_if
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/RISCV_prime/riscv-prod/RTL/CPUs/RISCVpipelinedRV32IMF_INT_VM_Cache/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/RISCVpipelinecode/pl_reg_ir.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pl_reg_ir
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/RISCV_prime/riscv-prod/RTL/CPUs/RISCVpipelinedRV32IMF_INT_VM_Cache/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/RISCVpipelinecode/pl_reg_mw.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pl_reg_mw
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/RISCV_prime/riscv-prod/RTL/CPUs/RISCVpipelinedRV32IMF_INT_VM_Cache/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/RISCVpipelinecode/pl_reg_pc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pl_reg_pc
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/RISCV_prime/riscv-prod/RTL/CPUs/RISCVpipelinedRV32IMF_INT_VM_Cache/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/RISCVpipelinecode/pl_stage_exe.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pl_stage_exe
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/RISCV_prime/riscv-prod/RTL/CPUs/RISCVpipelinedRV32IMF_INT_VM_Cache/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/RISCVpipelinecode/pl_stage_id.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pl_stage_id
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/RISCV_prime/riscv-prod/RTL/CPUs/RISCVpipelinedRV32IMF_INT_VM_Cache/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/RISCVpipelinecode/pl_stage_mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pl_stage_mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/RISCV_prime/riscv-prod/RTL/CPUs/RISCVpipelinedRV32IMF_INT_VM_Cache/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/RISCVpipelinecode/pl_stage_wb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pl_stage_wb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/RISCV_prime/riscv-prod/RTL/CPUs/RISCVpipelinedRV32IMF_INT_VM_Cache/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/mips-cpu/RTL/Common/io/pmod_als_spi_receiver.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pmod_als_spi_receiver
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/RISCV_prime/riscv-prod/RTL/CPUs/RISCVpipelinedRV32IMF_INT_VM_Cache/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/RISCVpipelinecode/regfile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/RISCV_prime/riscv-prod/RTL/CPUs/RISCVpipelinedRV32IMF_INT_VM_Cache/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/RISC-Vrv32m/rv32m_fuse.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rv32m_fuse
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/RISCV_prime/riscv-prod/RTL/CPUs/RISCVpipelinedRV32IMF_INT_VM_Cache/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/RISC-Vrv32m/rv32m_fuseALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rv32m_fuseALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/RISCV_prime/riscv-prod/RTL/CPUs/RISCVpipelinedRV32IMF_INT_VM_Cache/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/mips-cpu/RTL/Common/sevensegdec.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sevensegdec
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/RISCV_prime/riscv-prod/RTL/CPUs/RISCVpipelinedRV32IMF_INT_VM_Cache/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/mips-cpu/RTL/Common/io/sevensegtimer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sevensegtimer
+INFO: [VRFC 10-311] analyzing module counter
+INFO: [VRFC 10-311] analyzing module mux8
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/RISCV_prime/riscv-prod/RTL/CPUs/RISCVpipelinedRV32IMF_INT_VM_Cache/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/mips-cpu/RTL/Common/uram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uram
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/RISCV_prime/riscv-prod/RTL/CPUs/RISCVpipelinedRV32IMF_INT_VM_Cache/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/RISCVpipelinecode/mfp_nexys4_ddr.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mfp_nexys4_ddr
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/RISCV_prime/riscv-prod/RTL/CPUs/RISCVpipelinedRV32IMF_INT_VM_Cache/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/RISCVpipelinecode/add.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module add
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/RISCV_prime/riscv-prod/RTL/CPUs/RISCVpipelinedRV32IMF_INT_VM_Cache/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/RISCVpipelinecode/addsub32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module addsub32
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/RISCV_prime/riscv-prod/RTL/CPUs/RISCVpipelinedRV32IMF_INT_VM_Cache/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/RISCVpipelinecode/cla32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cla32
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/RISCV_prime/riscv-prod/RTL/CPUs/RISCVpipelinedRV32IMF_INT_VM_Cache/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/RISCVpipelinecode/cla_16.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cla_16
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/RISCV_prime/riscv-prod/RTL/CPUs/RISCVpipelinedRV32IMF_INT_VM_Cache/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/RISCVpipelinecode/cla_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cla_2
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/RISCV_prime/riscv-prod/RTL/CPUs/RISCVpipelinedRV32IMF_INT_VM_Cache/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/RISCVpipelinecode/cla_32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cla_32
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/RISCV_prime/riscv-prod/RTL/CPUs/RISCVpipelinedRV32IMF_INT_VM_Cache/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/RISCVpipelinecode/cla_4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cla_4
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/RISCV_prime/riscv-prod/RTL/CPUs/RISCVpipelinedRV32IMF_INT_VM_Cache/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/RISCVpipelinecode/cla_8.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cla_8
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/RISCV_prime/riscv-prod/RTL/CPUs/RISCVpipelinedRV32IMF_INT_VM_Cache/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/RISCVpipelinecode/gp.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gp
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/RISCV_prime/riscv-prod/RTL/CPUs/RISCVpipelinedRV32IMF_INT_VM_Cache/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/RISCVpipelinecode/mux2x5.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux2x5
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/RISCV_prime/riscv-prod/RTL/CPUs/RISCVpipelinedRV32IMF_INT_VM_Cache/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/mips-cpu/RTL/Common/pulseGen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pulseGen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/RISCV_prime/riscv-prod/RTL/CPUs/RISCVpipelinedRV32IMF_INT_VM_Cache/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/FPU files/fadd/reg_align_cal.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module reg_align_cal
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/RISCV_prime/riscv-prod/RTL/CPUs/RISCVpipelinedRV32IMF_INT_VM_Cache/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/FPU files/fadd/fadd_align.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fadd_align
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/RISCV_prime/riscv-prod/RTL/CPUs/RISCVpipelinedRV32IMF_INT_VM_Cache/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/FPU files/fadd/reg_cal_norm.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module reg_cal_norm
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/RISCV_prime/riscv-prod/RTL/CPUs/RISCVpipelinedRV32IMF_INT_VM_Cache/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/FPU files/fadd/fadd_cal.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fadd_cal
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/RISCV_prime/riscv-prod/RTL/CPUs/RISCVpipelinedRV32IMF_INT_VM_Cache/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/FPU files/fadd/pipelined_fadder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pipelined_fadder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/RISCV_prime/riscv-prod/RTL/CPUs/RISCVpipelinedRV32IMF_INT_VM_Cache/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/FPU files/fpu/fpu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fpu
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/RISCV_prime/riscv-prod/RTL/CPUs/RISCVpipelinedRV32IMF_INT_VM_Cache/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/FPU files/fadd/fadd_norm.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fadd_norm
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/RISCV_prime/riscv-prod/RTL/CPUs/RISCVpipelinedRV32IMF_INT_VM_Cache/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/imports/regfile2w.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regfile2w
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/RISCV_prime/riscv-prod/RTL/CPUs/RISCVpipelinedRV32IMF_INT_VM_Cache/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/Library/fdiv_newton.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fdiv_newton
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/RISCV_prime/riscv-prod/RTL/CPUs/RISCVpipelinedRV32IMF_INT_VM_Cache/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/Library/fsqrt_newton.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fsqrt_newton
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/RISCV_prime/riscv-prod/RTL/CPUs/RISCVpipelinedRV32IMF_INT_VM_Cache/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/Library/pipelined_fmul.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pipelined_fmul
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/RISCV_prime/riscv-prod/RTL/CPUs/RISCVpipelinedRV32IMF_INT_VM_Cache/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/Library/fmul_norm.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fmul_norm
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/RISCV_prime/riscv-prod/RTL/CPUs/RISCVpipelinedRV32IMF_INT_VM_Cache/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/Library/fmul_add.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fmul_add
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/RISCV_prime/riscv-prod/RTL/CPUs/RISCVpipelinedRV32IMF_INT_VM_Cache/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/Library/reg_mul_add.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module reg_mul_add
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/RISCV_prime/riscv-prod/RTL/CPUs/RISCVpipelinedRV32IMF_INT_VM_Cache/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/Library/fmul_mul.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fmul_mul
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/RISCV_prime/riscv-prod/RTL/CPUs/RISCVpipelinedRV32IMF_INT_VM_Cache/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/Library/csa.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module csa
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/RISCV_prime/riscv-prod/RTL/CPUs/RISCVpipelinedRV32IMF_INT_VM_Cache/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/Library/wallace_26x24_product.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module wallace_26x24_product
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/RISCV_prime/riscv-prod/RTL/CPUs/RISCVpipelinedRV32IMF_INT_VM_Cache/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/Library/wallace_24x26.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module wallace_24x26
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/RISCV_prime/riscv-prod/RTL/CPUs/RISCVpipelinedRV32IMF_INT_VM_Cache/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/Library/shift_to_msb_equ_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module shift_to_msb_equ_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/RISCV_prime/riscv-prod/RTL/CPUs/RISCVpipelinedRV32IMF_INT_VM_Cache/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/Library/wallace_26x26_product.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module wallace_26x26_product
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/RISCV_prime/riscv-prod/RTL/CPUs/RISCVpipelinedRV32IMF_INT_VM_Cache/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/Library/reg_add_norm.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module reg_add_norm
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/RISCV_prime/riscv-prod/RTL/CPUs/RISCVpipelinedRV32IMF_INT_VM_Cache/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/Library/shift_even_bits.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module shift_even_bits
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/RISCV_prime/riscv-prod/RTL/CPUs/RISCVpipelinedRV32IMF_INT_VM_Cache/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/Library/root_newton24.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module root_newton24
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/RISCV_prime/riscv-prod/RTL/CPUs/RISCVpipelinedRV32IMF_INT_VM_Cache/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/Library/newton24.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module newton24
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/RISCV_prime/riscv-prod/RTL/CPUs/RISCVpipelinedRV32IMF_INT_VM_Cache/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/Library/wallace_24x24.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module wallace_24x24
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/RISCV_prime/riscv-prod/RTL/CPUs/RISCVpipelinedRV32IMF_INT_VM_Cache/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/Library/wallace_26x24.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module wallace_26x24
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/RISCV_prime/riscv-prod/RTL/CPUs/RISCVpipelinedRV32IMF_INT_VM_Cache/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/Library/wallace_26x26.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module wallace_26x26
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/RISCV_prime/riscv-prod/RTL/CPUs/RISCVpipelinedRV32IMF_INT_VM_Cache/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/Library/wallace_24x28.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module wallace_24x28
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/RISCV_prime/riscv-prod/RTL/CPUs/RISCVpipelinedRV32IMF_INT_VM_Cache/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/Library/wallace_24x28_product.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module wallace_24x28_product
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/RISCV_prime/riscv-prod/RTL/CPUs/RISCVpipelinedRV32IMF_INT_VM_Cache/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/new/button_debounce.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module button_debounce
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/RISCV_prime/riscv-prod/RTL/CPUs/RISCVpipelinedRV32IMF_INT_VM_Cache/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/new/csr_unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module csr_unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/RISCV_prime/riscv-prod/RTL/CPUs/RISCVpipelinedRV32IMF_INT_VM_Cache/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/new/csr_unit_pipeline_adapter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module csr_unit_pipeline_adapter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/RISCV_prime/riscv-prod/RTL/CPUs/RISCVpipelinedRV32IMF_INT_VM_Cache/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/VM_and_cache/rand3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rand3
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/RISCV_prime/riscv-prod/RTL/CPUs/RISCVpipelinedRV32IMF_INT_VM_Cache/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/VM_and_cache/ram8x24.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ram8x24
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/RISCV_prime/riscv-prod/RTL/CPUs/RISCVpipelinedRV32IMF_INT_VM_Cache/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/VM_and_cache/cam8x21.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cam8x21
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/RISCV_prime/riscv-prod/RTL/CPUs/RISCVpipelinedRV32IMF_INT_VM_Cache/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/VM_and_cache/d_cache.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module d_cache
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/RISCV_prime/riscv-prod/RTL/CPUs/RISCVpipelinedRV32IMF_INT_VM_Cache/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/VM_and_cache/mux2x3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux2x3
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/RISCV_prime/riscv-prod/RTL/CPUs/RISCVpipelinedRV32IMF_INT_VM_Cache/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/VM_and_cache/i_cache.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module i_cache
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/RISCV_prime/riscv-prod/RTL/CPUs/RISCVpipelinedRV32IMF_INT_VM_Cache/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/VM_and_cache/tlb_8_entry.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tlb_8_entry
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/RISCV_prime/riscv-prod/RTL/CPUs/RISCVpipelinedRV32IMF_INT_VM_Cache/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/VM_and_cache/physical_memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module physical_memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/RISCV_prime/riscv-prod/RTL/CPUs/RISCVpipelinedRV32IMF_INT_VM_Cache/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/new/ptw_sv32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ptw_sv32
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/RISCV_prime/riscv-prod/RTL/CPUs/RISCVpipelinedRV32IMF_INT_VM_Cache/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/new/rv_memsubsys.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rv_memsubsys
+WARNING: [VRFC 10-3380] identifier 'mem_strobe' is used before its declaration [C:/RISCV_prime/riscv-prod/RTL/CPUs/RISCVpipelinedRV32IMF_INT_VM_Cache/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/new/rv_memsubsys.v:327]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/RISCV_prime/riscv-prod/RTL/CPUs/RISCVpipelinedRV32IMF_INT_VM_Cache/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/uart-debug/debug_control_single.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module debug_control
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/RISCV_prime/riscv-prod/RTL/CPUs/RISCVpipelinedRV32IMF_INT_VM_Cache/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sim_1/new/pipelinedcpu_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pipelinedcpu_tb
+run_program: Time (s): cpu = 00:00:02 ; elapsed = 00:00:20 . Memory (MB): peak = 1735.180 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '20' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/RISCV_prime/riscv-prod/RTL/CPUs/RISCVpipelinedRV32IMF_INT_VM_Cache/RISCVpipelinedRV32IMF_INT_VM_Cache.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot pipelinedcpu_tb_behav xil_defaultlib.pipelinedcpu_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2024.2.0
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2024.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot pipelinedcpu_tb_behav xil_defaultlib.pipelinedcpu_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 32 for port 'dc_hits' [C:/RISCV_prime/riscv-prod/RTL/CPUs/RISCVpipelinedRV32IMF_INT_VM_Cache/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/new/rv_memsubsys.v:426]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 32 for port 'dc_misses' [C:/RISCV_prime/riscv-prod/RTL/CPUs/RISCVpipelinedRV32IMF_INT_VM_Cache/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/new/rv_memsubsys.v:427]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 32 for port 'dc_refills' [C:/RISCV_prime/riscv-prod/RTL/CPUs/RISCVpipelinedRV32IMF_INT_VM_Cache/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/new/rv_memsubsys.v:428]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 32 for port 'dc_stall_cycles' [C:/RISCV_prime/riscv-prod/RTL/CPUs/RISCVpipelinedRV32IMF_INT_VM_Cache/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/new/rv_memsubsys.v:429]
+WARNING: [VRFC 10-5021] port 'counter' is not connected on this instance [C:/RISCV_prime/riscv-prod/RTL/CPUs/RISCVpipelinedRV32IMF_INT_VM_Cache/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sim_1/new/pipelinedcpu_tb.v:371]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.mux4x32
+Compiling module xil_defaultlib.dffe32
+Compiling module xil_defaultlib.pl_reg_pc
+Compiling module xil_defaultlib.pc4
+Compiling module xil_defaultlib.rand3
+Compiling module xil_defaultlib.mux2x3
+Compiling module xil_defaultlib.ram8x24
+Compiling module xil_defaultlib.cam8x21
+Compiling module xil_defaultlib.tlb_8_entry
+Compiling module xil_defaultlib.ptw_sv32
+Compiling module xil_defaultlib.pipelinedcpu_decode
+Compiling module xil_defaultlib.i_cache
+Compiling module xil_defaultlib.d_cache
+Compiling module xil_defaultlib.milliscounter
+Compiling module xil_defaultlib.regR
+Compiling module xil_defaultlib.microsCounter
+Compiling module xil_defaultlib.toggleBuzz
+Compiling module xil_defaultlib.buzzer
+Compiling module xil_defaultlib.SPI_Master(SPI_MODE=3,CLKS_PER_H...
+Compiling module xil_defaultlib.pmod_als_spi_receiver
+Compiling module xil_defaultlib.sevensegdec
+Compiling module xil_defaultlib.counter(WIDTH=16)
+Compiling module xil_defaultlib.counter(WIDTH=3)
+Compiling module xil_defaultlib.mux8
+Compiling module xil_defaultlib.mux8(WIDTH=4)
+Compiling module xil_defaultlib.sevensegtimer
+Compiling module xil_defaultlib.cpugpio
+Compiling module xil_defaultlib.rv_memsubsys_default
+Compiling module xil_defaultlib.uram(A_WIDTH=11,INIT_FILE="C:/RI...
+Compiling module xil_defaultlib.uram(A_WIDTH=11,INIT_FILE="C:/RI...
+Compiling module xil_defaultlib.uram(A_WIDTH=11,INIT_FILE="C:/RI...
+Compiling module xil_defaultlib.uram(A_WIDTH=11,INIT_FILE="C:/RI...
+Compiling module xil_defaultlib.physical_memory
+Compiling module xil_defaultlib.pl_reg_ir
+Compiling module xil_defaultlib.rv32m_fuse
+Compiling module xil_defaultlib.PulseGenerator
+Compiling module xil_defaultlib.Start_Div
+Compiling module xil_defaultlib.pl_id_cu
+Compiling module xil_defaultlib.regfile
+Compiling module xil_defaultlib.mux2x32
+Compiling module xil_defaultlib.jal_addr
+Compiling module xil_defaultlib.jalr_addr
+Compiling module xil_defaultlib.branch_addr
+Compiling module xil_defaultlib.imme
+Compiling module xil_defaultlib.pl_stage_id
+Compiling module xil_defaultlib.pl_reg_de
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.pl_stage_exe
+Compiling module xil_defaultlib.pl_reg_em
+Compiling module xil_defaultlib.pl_reg_mw
+Compiling module xil_defaultlib.pl_stage_wb
+Compiling module xil_defaultlib.regfile2w
+Compiling module xil_defaultlib.fadd_align
+Compiling module xil_defaultlib.reg_align_cal
+Compiling module xil_defaultlib.fadd_cal
+Compiling module xil_defaultlib.reg_cal_norm
+Compiling module xil_defaultlib.fadd_norm
+Compiling module xil_defaultlib.pipelined_fadder
+Compiling module xil_defaultlib.csa
+Compiling module xil_defaultlib.wallace_24x24
+Compiling module xil_defaultlib.fmul_mul
+Compiling module xil_defaultlib.reg_mul_add
+Compiling module xil_defaultlib.fmul_add
+Compiling module xil_defaultlib.reg_add_norm
+Compiling module xil_defaultlib.fmul_norm
+Compiling module xil_defaultlib.pipelined_fmul
+Compiling module xil_defaultlib.shift_to_msb_equ_1
+Compiling module xil_defaultlib.wallace_26x24
+Compiling module xil_defaultlib.wallace_26x24_product
+Compiling module xil_defaultlib.wallace_26x26
+Compiling module xil_defaultlib.wallace_26x26_product
+Compiling module xil_defaultlib.wallace_24x26
+Compiling module xil_defaultlib.newton24
+Compiling module xil_defaultlib.fdiv_newton
+Compiling module xil_defaultlib.shift_even_bits
+Compiling module xil_defaultlib.wallace_24x28
+Compiling module xil_defaultlib.wallace_24x28_product
+Compiling module xil_defaultlib.root_newton24
+Compiling module xil_defaultlib.fsqrt_newton
+Compiling module xil_defaultlib.fpu
+Compiling module xil_defaultlib.UART_TX(CLKS_PER_BIT=434)
+Compiling module xil_defaultlib.UART_RX(CLKS_PER_BIT=434)
+Compiling module xil_defaultlib.cmdproc
+Compiling module xil_defaultlib.debug_control
+Compiling module xil_defaultlib.csr_unit
+Compiling module xil_defaultlib.csr_unit_pipeline_adapter
+Compiling module xil_defaultlib.pl_computer
+Compiling module xil_defaultlib.pipelinedcpu_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot pipelinedcpu_tb_behav
+run_program: Time (s): cpu = 00:00:05 ; elapsed = 00:00:39 . Memory (MB): peak = 1735.180 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '40' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/RISCV_prime/riscv-prod/RTL/CPUs/RISCVpipelinedRV32IMF_INT_VM_Cache/RISCVpipelinedRV32IMF_INT_VM_Cache.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "pipelinedcpu_tb_behav -key {Behavioral:sim_1:Functional:pipelinedcpu_tb} -tclbatch {pipelinedcpu_tb.tcl} -view {C:/RISCV_prime/riscv-prod/RTL/CPUs/RISCVpipelinedRV32IMF_INT_VM_Cache/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sim_1/imports/RISCVpipelineRV32IM/pipelinedcpu_tb_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+open_wave_config C:/RISCV_prime/riscv-prod/RTL/CPUs/RISCVpipelinedRV32IMF_INT_VM_Cache/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sim_1/imports/RISCVpipelineRV32IM/pipelinedcpu_tb_behav.wcfg
+source pipelinedcpu_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:16 ; elapsed = 00:00:10 . Memory (MB): peak = 1777.980 ; gain = 41.895
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'pipelinedcpu_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:30 ; elapsed = 00:01:17 . Memory (MB): peak = 1777.980 ; gain = 54.188
+restart
+INFO: [Wavedata 42-604] Simulation restarted
+run 30 us
+restart
+INFO: [Wavedata 42-604] Simulation restarted
+run 30 us
+run 30 us

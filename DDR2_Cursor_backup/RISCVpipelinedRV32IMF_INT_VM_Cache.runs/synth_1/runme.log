@@ -1,0 +1,976 @@
+
+*** Running vivado
+    with args -log mfp_nexys4_ddr.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source mfp_nexys4_ddr.tcl
+
+
+
+****** Vivado v2024.2 (64-bit)
+  **** SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+  **** IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+  **** SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+  **** Start of session at: Sun Apr 26 16:39:40 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+WARNING: [Runs 36-547] User Strategy 'Vivado Implementation Defaults' from file 'C:\Users\lamqi\AppData\Roaming/Xilinx/Vivado/2024.2/strategies/Vivado Implementation Defaults.Vivado Implementation 2020.psg' discarded because strategy with same name already parsed from 'C:/Xilinx/Vivado/2024.2/strategies/VDI2020.psg'
+WARNING: [Runs 36-547] User Strategy 'Vivado Implementation Defaults' from file 'C:\Users\lamqi\AppData\Roaming/Xilinx/Vivado/2024.2/strategies/Vivado Implementation Defaults_2.Vivado Implementation 2020.psg' discarded because strategy with same name already parsed from 'C:/Xilinx/Vivado/2024.2/strategies/VDI2020.psg'
+source mfp_nexys4_ddr.tcl -notrace
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 618.777 ; gain = 190.723
+Command: synth_design -top mfp_nexys4_ddr -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 43332
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 1355.148 ; gain = 464.961
+---------------------------------------------------------------------------------
+INFO: [Synth 8-11241] undeclared symbol 'tlb_active', assumed default net type 'wire' [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/RISCVpipelinecode/pl_computer.v:336]
+INFO: [Synth 8-11241] undeclared symbol 'csr_en', assumed default net type 'wire' [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/RISCVpipelinecode/pl_computer.v:395]
+INFO: [Synth 8-11241] undeclared symbol 'sret', assumed default net type 'wire' [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/RISCVpipelinecode/pl_computer.v:395]
+INFO: [Synth 8-11241] undeclared symbol 'fence_i', assumed default net type 'wire' [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/RISCVpipelinecode/pl_computer.v:395]
+INFO: [Synth 8-11241] undeclared symbol 'sfence_vma_all', assumed default net type 'wire' [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/RISCVpipelinecode/pl_computer.v:395]
+INFO: [Synth 8-11241] undeclared symbol 'dtlb_exce', assumed default net type 'wire' [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/RISCVpipelinecode/pl_computer.v:396]
+INFO: [Synth 8-11241] undeclared symbol 'fence_i_ex', assumed default net type 'wire' [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/RISCVpipelinecode/pl_computer.v:408]
+INFO: [Synth 8-11241] undeclared symbol 'sfence_vma_all_ex', assumed default net type 'wire' [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/RISCVpipelinecode/pl_computer.v:408]
+INFO: [Synth 8-11241] undeclared symbol 'sret_ex', assumed default net type 'wire' [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/RISCVpipelinecode/pl_computer.v:408]
+INFO: [Synth 8-11241] undeclared symbol 'fence_i_mem', assumed default net type 'wire' [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/RISCVpipelinecode/pl_computer.v:425]
+INFO: [Synth 8-11241] undeclared symbol 'sfence_vma_all_mem', assumed default net type 'wire' [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/RISCVpipelinecode/pl_computer.v:425]
+INFO: [Synth 8-11241] undeclared symbol 'sret_mem', assumed default net type 'wire' [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/RISCVpipelinecode/pl_computer.v:425]
+INFO: [Synth 8-11241] undeclared symbol 'dbg_mem_addr', assumed default net type 'wire' [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/RISCVpipelinecode/pl_computer.v:491]
+INFO: [Synth 8-11241] undeclared symbol 'dbg_mem_din', assumed default net type 'wire' [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/RISCVpipelinecode/pl_computer.v:492]
+INFO: [Synth 8-11241] undeclared symbol 'dbg_mem_we', assumed default net type 'wire' [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/RISCVpipelinecode/pl_computer.v:494]
+INFO: [Synth 8-11241] undeclared symbol 'dbg_mem_ce', assumed default net type 'wire' [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/RISCVpipelinecode/pl_computer.v:495]
+INFO: [Synth 8-11241] undeclared symbol 'regrt', assumed default net type 'wire' [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/RISCVpipelinecode/pl_id_cu.v:205]
+INFO: [Synth 8-11241] undeclared symbol 'overflow', assumed default net type 'wire' [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/RISCVpipelinecode/pl_stage_exe.v:20]
+INFO: [Synth 8-11241] undeclared symbol 'CPU_RESET', assumed default net type 'wire' [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/RISCVpipelinecode/mfp_nexys4_ddr.v:55]
+INFO: [Synth 8-11241] undeclared symbol 'intr', assumed default net type 'wire' [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/RISCVpipelinecode/mfp_nexys4_ddr.v:87]
+INFO: [Synth 8-11241] undeclared symbol 'main_mem_data_write', assumed default net type 'wire' [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/new/rv_memsubsys.v:137]
+INFO: [Synth 8-11241] undeclared symbol 'dc_hits', assumed default net type 'wire' [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/new/rv_memsubsys.v:426]
+INFO: [Synth 8-11241] undeclared symbol 'dc_misses', assumed default net type 'wire' [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/new/rv_memsubsys.v:427]
+INFO: [Synth 8-11241] undeclared symbol 'dc_refills', assumed default net type 'wire' [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/new/rv_memsubsys.v:428]
+INFO: [Synth 8-11241] undeclared symbol 'dc_stall_cycles', assumed default net type 'wire' [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/new/rv_memsubsys.v:429]
+WARNING: [Synth 8-6901] identifier 'mem_strobe' is used before its declaration [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/new/rv_memsubsys.v:327]
+INFO: [Synth 8-6157] synthesizing module 'mfp_nexys4_ddr' [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/RISCVpipelinecode/mfp_nexys4_ddr.v:18]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.runs/synth_1/.Xil/Vivado-14796-QianPC/realtime/clk_wiz_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (0#1) [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.runs/synth_1/.Xil/Vivado-14796-QianPC/realtime/clk_wiz_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'pll' [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.runs/synth_1/.Xil/Vivado-14796-QianPC/realtime/pll_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'pll' (0#1) [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.runs/synth_1/.Xil/Vivado-14796-QianPC/realtime/pll_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'button_debounce' [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/new/button_debounce.v:24]
+	Parameter DEBOUNCE_PERIOD bound to: 1000000 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'button_debounce' (0#1) [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/new/button_debounce.v:24]
+INFO: [Synth 8-6157] synthesizing module 'pl_computer' [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/RISCVpipelinecode/pl_computer.v:3]
+INFO: [Synth 8-6157] synthesizing module 'mux4x32' [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/RISCVpipelinecode/mux4x32.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'mux4x32' (0#1) [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/RISCVpipelinecode/mux4x32.v:6]
+INFO: [Synth 8-6157] synthesizing module 'pl_reg_pc' [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/RISCVpipelinecode/pl_reg_pc.v:6]
+INFO: [Synth 8-6157] synthesizing module 'dffe32' [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/RISCVpipelinecode/dffe32.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'dffe32' (0#1) [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/RISCVpipelinecode/dffe32.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'pl_reg_pc' (0#1) [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/RISCVpipelinecode/pl_reg_pc.v:6]
+INFO: [Synth 8-6157] synthesizing module 'pc4' [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/RISCVpipelinecode/pc4.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'pc4' (0#1) [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/RISCVpipelinecode/pc4.v:1]
+INFO: [Synth 8-6157] synthesizing module 'rv_memsubsys' [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/new/rv_memsubsys.v:31]
+	Parameter BYPASS_TLB bound to: 1'b0 
+	Parameter BYPASS_ICACHE bound to: 1'b0 
+	Parameter BYPASS_DCACHE bound to: 1'b0 
+INFO: [Synth 8-6157] synthesizing module 'tlb_8_entry' [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/VM_and_cache/tlb_8_entry.v:13]
+INFO: [Synth 8-6157] synthesizing module 'rand3' [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/VM_and_cache/rand3.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'rand3' (0#1) [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/VM_and_cache/rand3.v:6]
+INFO: [Synth 8-6157] synthesizing module 'mux2x3' [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/VM_and_cache/mux2x3.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'mux2x3' (0#1) [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/VM_and_cache/mux2x3.v:6]
+INFO: [Synth 8-6157] synthesizing module 'ram8x24' [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/VM_and_cache/ram8x24.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ram8x24' (0#1) [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/VM_and_cache/ram8x24.v:6]
+INFO: [Synth 8-6157] synthesizing module 'cam8x21' [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/VM_and_cache/cam8x21.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'cam8x21' (0#1) [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/VM_and_cache/cam8x21.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'tlb_8_entry' (0#1) [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/VM_and_cache/tlb_8_entry.v:13]
+WARNING: [Synth 8-7071] port 'hit_idx' of module 'tlb_8_entry' is unconnected for instance 'itlb' [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/new/rv_memsubsys.v:143]
+WARNING: [Synth 8-7023] instance 'itlb' of module 'tlb_8_entry' has 11 connections declared, but only 10 given [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/new/rv_memsubsys.v:143]
+WARNING: [Synth 8-7071] port 'hit_idx' of module 'tlb_8_entry' is unconnected for instance 'dtlb' [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/new/rv_memsubsys.v:162]
+WARNING: [Synth 8-7023] instance 'dtlb' of module 'tlb_8_entry' has 11 connections declared, but only 10 given [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/new/rv_memsubsys.v:162]
+INFO: [Synth 8-6157] synthesizing module 'i_cache' [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/VM_and_cache/i_cache.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'i_cache' (0#1) [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/VM_and_cache/i_cache.v:6]
+INFO: [Synth 8-6157] synthesizing module 'd_cache' [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/VM_and_cache/d_cache.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'd_cache' (0#1) [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/VM_and_cache/d_cache.v:6]
+WARNING: [Synth 8-689] width (1) of port connection 'dc_hits' does not match port width (32) of module 'd_cache' [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/new/rv_memsubsys.v:426]
+WARNING: [Synth 8-689] width (1) of port connection 'dc_misses' does not match port width (32) of module 'd_cache' [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/new/rv_memsubsys.v:427]
+WARNING: [Synth 8-689] width (1) of port connection 'dc_refills' does not match port width (32) of module 'd_cache' [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/new/rv_memsubsys.v:428]
+WARNING: [Synth 8-689] width (1) of port connection 'dc_stall_cycles' does not match port width (32) of module 'd_cache' [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/new/rv_memsubsys.v:429]
+INFO: [Synth 8-6157] synthesizing module 'ptw_sv32' [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/new/ptw_sv32.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'ptw_sv32' (0#1) [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/new/ptw_sv32.v:21]
+INFO: [Synth 8-6157] synthesizing module 'pipelinedcpu_decode' [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/RISCVpipelinecode/pipelinedcpu_decode.v:25]
+INFO: [Synth 8-6155] done synthesizing module 'pipelinedcpu_decode' (0#1) [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/RISCVpipelinecode/pipelinedcpu_decode.v:25]
+INFO: [Synth 8-6157] synthesizing module 'cpugpio' [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/mips-cpu/RTL/Common/io/cpugpio.v:9]
+INFO: [Synth 8-6157] synthesizing module 'milliscounter' [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/mips-cpu/RTL/Common/io/milliscounter.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'milliscounter' (0#1) [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/mips-cpu/RTL/Common/io/milliscounter.v:7]
+INFO: [Synth 8-6157] synthesizing module 'buzzer' [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/mips-cpu/RTL/Common/io/buzzer.v:7]
+INFO: [Synth 8-6157] synthesizing module 'regR' [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/mips-cpu/RTL/Common/io/buzzer.v:66]
+INFO: [Synth 8-6155] done synthesizing module 'regR' (0#1) [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/mips-cpu/RTL/Common/io/buzzer.v:66]
+INFO: [Synth 8-6157] synthesizing module 'microsCounter' [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/mips-cpu/RTL/Common/io/buzzer.v:30]
+INFO: [Synth 8-6155] done synthesizing module 'microsCounter' (0#1) [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/mips-cpu/RTL/Common/io/buzzer.v:30]
+INFO: [Synth 8-6157] synthesizing module 'toggleBuzz' [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/mips-cpu/RTL/Common/io/buzzer.v:51]
+INFO: [Synth 8-6155] done synthesizing module 'toggleBuzz' (0#1) [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/mips-cpu/RTL/Common/io/buzzer.v:51]
+INFO: [Synth 8-6155] done synthesizing module 'buzzer' (0#1) [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/mips-cpu/RTL/Common/io/buzzer.v:7]
+INFO: [Synth 8-6157] synthesizing module 'SPI_Master' [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/mips-cpu/RTL/Common/io/SPI_Master.v:56]
+	Parameter SPI_MODE bound to: 3 - type: integer 
+	Parameter CLKS_PER_HALF_BIT bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'SPI_Master' (0#1) [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/mips-cpu/RTL/Common/io/SPI_Master.v:56]
+INFO: [Synth 8-6157] synthesizing module 'pmod_als_spi_receiver' [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/mips-cpu/RTL/Common/io/pmod_als_spi_receiver.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'pmod_als_spi_receiver' (0#1) [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/mips-cpu/RTL/Common/io/pmod_als_spi_receiver.v:1]
+INFO: [Synth 8-6157] synthesizing module 'sevensegtimer' [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/mips-cpu/RTL/Common/io/sevensegtimer.v:7]
+INFO: [Synth 8-6157] synthesizing module 'sevensegdec' [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/mips-cpu/RTL/Common/sevensegdec.v:7]
+INFO: [Synth 8-226] default block is never used [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/mips-cpu/RTL/Common/sevensegdec.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'sevensegdec' (0#1) [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/mips-cpu/RTL/Common/sevensegdec.v:7]
+INFO: [Synth 8-6157] synthesizing module 'counter' [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/mips-cpu/RTL/Common/io/sevensegtimer.v:51]
+	Parameter WIDTH bound to: 16 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'counter' (0#1) [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/mips-cpu/RTL/Common/io/sevensegtimer.v:51]
+INFO: [Synth 8-6157] synthesizing module 'counter__parameterized0' [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/mips-cpu/RTL/Common/io/sevensegtimer.v:51]
+	Parameter WIDTH bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'counter__parameterized0' (0#1) [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/mips-cpu/RTL/Common/io/sevensegtimer.v:51]
+INFO: [Synth 8-6157] synthesizing module 'mux8' [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/mips-cpu/RTL/Common/io/sevensegtimer.v:64]
+	Parameter WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-226] default block is never used [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/mips-cpu/RTL/Common/io/sevensegtimer.v:70]
+INFO: [Synth 8-6155] done synthesizing module 'mux8' (0#1) [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/mips-cpu/RTL/Common/io/sevensegtimer.v:64]
+INFO: [Synth 8-6157] synthesizing module 'mux8__parameterized0' [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/mips-cpu/RTL/Common/io/sevensegtimer.v:64]
+	Parameter WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-226] default block is never used [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/mips-cpu/RTL/Common/io/sevensegtimer.v:70]
+INFO: [Synth 8-6155] done synthesizing module 'mux8__parameterized0' (0#1) [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/mips-cpu/RTL/Common/io/sevensegtimer.v:64]
+INFO: [Synth 8-6155] done synthesizing module 'sevensegtimer' (0#1) [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/mips-cpu/RTL/Common/io/sevensegtimer.v:7]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/mips-cpu/RTL/Common/io/cpugpio.v:153]
+INFO: [Synth 8-6155] done synthesizing module 'cpugpio' (0#1) [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/mips-cpu/RTL/Common/io/cpugpio.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'rv_memsubsys' (0#1) [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/new/rv_memsubsys.v:31]
+INFO: [Synth 8-6157] synthesizing module 'physical_memory_hybrid' [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/VM_and_cache/physical_memory_hybrid.v:17]
+INFO: [Synth 8-6157] synthesizing module 'uram' [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/mips-cpu/RTL/Common/uram.v:2]
+	Parameter A_WIDTH bound to: 11 - type: integer 
+	Parameter INIT_FILE bound to: C:/JHU_Classes/RISC_V/riscv-cpu/Software/Assembly/RISCV_DDR2_Smoke/mem0.mem - type: string 
+	Parameter READ_DELAY bound to: 0 - type: integer 
+INFO: [Synth 8-3876] $readmem data file 'C:/JHU_Classes/RISC_V/riscv-cpu/Software/Assembly/RISCV_DDR2_Smoke/mem0.mem' is read successfully [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/mips-cpu/RTL/Common/uram.v:39]
+INFO: [Synth 8-6155] done synthesizing module 'uram' (0#1) [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/mips-cpu/RTL/Common/uram.v:2]
+INFO: [Synth 8-6157] synthesizing module 'uram__parameterized0' [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/mips-cpu/RTL/Common/uram.v:2]
+	Parameter A_WIDTH bound to: 11 - type: integer 
+	Parameter INIT_FILE bound to: C:/JHU_Classes/RISC_V/riscv-cpu/Software/Assembly/RISCV_DDR2_Smoke/mem1.mem - type: string 
+	Parameter READ_DELAY bound to: 0 - type: integer 
+INFO: [Synth 8-3876] $readmem data file 'C:/JHU_Classes/RISC_V/riscv-cpu/Software/Assembly/RISCV_DDR2_Smoke/mem1.mem' is read successfully [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/mips-cpu/RTL/Common/uram.v:39]
+INFO: [Synth 8-6155] done synthesizing module 'uram__parameterized0' (0#1) [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/mips-cpu/RTL/Common/uram.v:2]
+INFO: [Synth 8-6157] synthesizing module 'uram__parameterized1' [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/mips-cpu/RTL/Common/uram.v:2]
+	Parameter A_WIDTH bound to: 11 - type: integer 
+	Parameter INIT_FILE bound to: C:/JHU_Classes/RISC_V/riscv-cpu/Software/Assembly/RISCV_DDR2_Smoke/mem2.mem - type: string 
+	Parameter READ_DELAY bound to: 0 - type: integer 
+INFO: [Synth 8-3876] $readmem data file 'C:/JHU_Classes/RISC_V/riscv-cpu/Software/Assembly/RISCV_DDR2_Smoke/mem2.mem' is read successfully [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/mips-cpu/RTL/Common/uram.v:39]
+INFO: [Synth 8-6155] done synthesizing module 'uram__parameterized1' (0#1) [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/mips-cpu/RTL/Common/uram.v:2]
+INFO: [Synth 8-6157] synthesizing module 'uram__parameterized2' [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/mips-cpu/RTL/Common/uram.v:2]
+	Parameter A_WIDTH bound to: 11 - type: integer 
+	Parameter INIT_FILE bound to: C:/JHU_Classes/RISC_V/riscv-cpu/Software/Assembly/RISCV_DDR2_Smoke/mem3.mem - type: string 
+	Parameter READ_DELAY bound to: 0 - type: integer 
+INFO: [Synth 8-3876] $readmem data file 'C:/JHU_Classes/RISC_V/riscv-cpu/Software/Assembly/RISCV_DDR2_Smoke/mem3.mem' is read successfully [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/mips-cpu/RTL/Common/uram.v:39]
+INFO: [Synth 8-6155] done synthesizing module 'uram__parameterized2' (0#1) [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/mips-cpu/RTL/Common/uram.v:2]
+INFO: [Synth 8-6157] synthesizing module 'mem_example' [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/new/mem_example.v:16]
+INFO: [Synth 8-6157] synthesizing module 'mig' [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.runs/synth_1/.Xil/Vivado-14796-QianPC/realtime/mig_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'mig' (0#1) [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.runs/synth_1/.Xil/Vivado-14796-QianPC/realtime/mig_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'flag_sync' [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/new/flag_sync.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'flag_sync' (0#1) [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/new/flag_sync.v:1]
+INFO: [Synth 8-6157] synthesizing module 'ff_sync' [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/new/ff_sync.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'ff_sync' (0#1) [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/new/ff_sync.v:1]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/new/mem_example.v:212]
+INFO: [Synth 8-6155] done synthesizing module 'mem_example' (0#1) [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/new/mem_example.v:16]
+INFO: [Synth 8-6155] done synthesizing module 'physical_memory_hybrid' (0#1) [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/VM_and_cache/physical_memory_hybrid.v:17]
+INFO: [Synth 8-6157] synthesizing module 'pl_reg_ir' [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/RISCVpipelinecode/pl_reg_ir.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'pl_reg_ir' (0#1) [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/RISCVpipelinecode/pl_reg_ir.v:6]
+INFO: [Synth 8-6157] synthesizing module 'pl_stage_id' [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/RISCVpipelinecode/pl_stage_id.v:6]
+INFO: [Synth 8-6157] synthesizing module 'pl_id_cu' [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/RISCVpipelinecode/pl_id_cu.v:1]
+INFO: [Synth 8-6157] synthesizing module 'rv32m_fuse' [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/RISC-Vrv32m/rv32m_fuse.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'rv32m_fuse' (0#1) [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/RISC-Vrv32m/rv32m_fuse.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Start_Div' [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/RISC-Vrv32m/Start_Div.v:23]
+INFO: [Synth 8-6157] synthesizing module 'PulseGenerator' [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/RISC-Vrv32m/PulseGenerator.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'PulseGenerator' (0#1) [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/RISC-Vrv32m/PulseGenerator.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Start_Div' (0#1) [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/RISC-Vrv32m/Start_Div.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'pl_id_cu' (0#1) [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/RISCVpipelinecode/pl_id_cu.v:1]
+INFO: [Synth 8-6157] synthesizing module 'regfile' [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/RISCVpipelinecode/regfile.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'regfile' (0#1) [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/RISCVpipelinecode/regfile.v:6]
+INFO: [Synth 8-6157] synthesizing module 'mux2x32' [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/RISCVpipelinecode/mux2x32.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'mux2x32' (0#1) [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/RISCVpipelinecode/mux2x32.v:6]
+INFO: [Synth 8-6157] synthesizing module 'jal_addr' [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/RISCVpipelinecode/jal_addr.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'jal_addr' (0#1) [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/RISCVpipelinecode/jal_addr.v:1]
+INFO: [Synth 8-6157] synthesizing module 'jalr_addr' [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/RISCVpipelinecode/jalr_addr.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'jalr_addr' (0#1) [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/RISCVpipelinecode/jalr_addr.v:1]
+INFO: [Synth 8-6157] synthesizing module 'branch_addr' [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/RISCVpipelinecode/branch_addr.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'branch_addr' (0#1) [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/RISCVpipelinecode/branch_addr.v:1]
+INFO: [Synth 8-6157] synthesizing module 'imme' [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/RISCVpipelinecode/imme.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'imme' (0#1) [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/RISCVpipelinecode/imme.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'pl_stage_id' (0#1) [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/RISCVpipelinecode/pl_stage_id.v:6]
+INFO: [Synth 8-6157] synthesizing module 'pl_reg_de' [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/RISCVpipelinecode/pl_reg_de.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'pl_reg_de' (0#1) [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/RISCVpipelinecode/pl_reg_de.v:1]
+INFO: [Synth 8-6157] synthesizing module 'pl_stage_exe' [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/RISCVpipelinecode/pl_stage_exe.v:2]
+INFO: [Synth 8-6157] synthesizing module 'alu' [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/RISCVpipelinecode/alu.v:15]
+INFO: [Synth 8-226] default block is never used [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/RISCVpipelinecode/alu.v:33]
+INFO: [Synth 8-6155] done synthesizing module 'alu' (0#1) [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/RISCVpipelinecode/alu.v:15]
+INFO: [Synth 8-6155] done synthesizing module 'pl_stage_exe' (0#1) [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/RISCVpipelinecode/pl_stage_exe.v:2]
+INFO: [Synth 8-6157] synthesizing module 'pl_reg_em' [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/RISCVpipelinecode/pl_reg_em.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'pl_reg_em' (0#1) [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/RISCVpipelinecode/pl_reg_em.v:1]
+INFO: [Synth 8-6157] synthesizing module 'pl_reg_mw' [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/RISCVpipelinecode/pl_reg_mw.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'pl_reg_mw' (0#1) [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/RISCVpipelinecode/pl_reg_mw.v:1]
+INFO: [Synth 8-6157] synthesizing module 'pl_stage_wb' [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/RISCVpipelinecode/pl_stage_wb.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'pl_stage_wb' (0#1) [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/RISCVpipelinecode/pl_stage_wb.v:1]
+INFO: [Synth 8-6157] synthesizing module 'regfile2w' [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/imports/regfile2w.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'regfile2w' (0#1) [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/imports/regfile2w.v:6]
+INFO: [Synth 8-6157] synthesizing module 'fpu' [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/FPU files/fpu/fpu.v:6]
+INFO: [Synth 8-6157] synthesizing module 'pipelined_fadder' [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/FPU files/fadd/pipelined_fadder.v:6]
+INFO: [Synth 8-6157] synthesizing module 'fadd_align' [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/FPU files/fadd/fadd_align.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fadd_align' (0#1) [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/FPU files/fadd/fadd_align.v:6]
+INFO: [Synth 8-6157] synthesizing module 'reg_align_cal' [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/FPU files/fadd/reg_align_cal.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'reg_align_cal' (0#1) [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/FPU files/fadd/reg_align_cal.v:6]
+INFO: [Synth 8-6157] synthesizing module 'fadd_cal' [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/FPU files/fadd/fadd_cal.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fadd_cal' (0#1) [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/FPU files/fadd/fadd_cal.v:6]
+INFO: [Synth 8-6157] synthesizing module 'reg_cal_norm' [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/FPU files/fadd/reg_cal_norm.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'reg_cal_norm' (0#1) [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/FPU files/fadd/reg_cal_norm.v:6]
+INFO: [Synth 8-6157] synthesizing module 'fadd_norm' [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/FPU files/fadd/fadd_norm.v:6]
+INFO: [Synth 8-226] default block is never used [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/FPU files/fadd/fadd_norm.v:60]
+INFO: [Synth 8-6155] done synthesizing module 'fadd_norm' (0#1) [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/FPU files/fadd/fadd_norm.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'pipelined_fadder' (0#1) [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/FPU files/fadd/pipelined_fadder.v:6]
+INFO: [Synth 8-6157] synthesizing module 'pipelined_fmul' [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/Library/pipelined_fmul.v:6]
+INFO: [Synth 8-6157] synthesizing module 'fmul_mul' [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/Library/fmul_mul.v:6]
+INFO: [Synth 8-6157] synthesizing module 'wallace_24x24' [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/Library/wallace_24x24.v:6]
+INFO: [Synth 8-6157] synthesizing module 'csa' [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/Library/csa.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'csa' (0#1) [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/Library/csa.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'wallace_24x24' (0#1) [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/Library/wallace_24x24.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fmul_mul' (0#1) [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/Library/fmul_mul.v:6]
+INFO: [Synth 8-6157] synthesizing module 'reg_mul_add' [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/Library/reg_mul_add.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'reg_mul_add' (0#1) [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/Library/reg_mul_add.v:6]
+INFO: [Synth 8-6157] synthesizing module 'fmul_add' [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/Library/fmul_add.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fmul_add' (0#1) [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/Library/fmul_add.v:6]
+INFO: [Synth 8-6157] synthesizing module 'reg_add_norm' [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/Library/reg_add_norm.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'reg_add_norm' (0#1) [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/Library/reg_add_norm.v:6]
+INFO: [Synth 8-6157] synthesizing module 'fmul_norm' [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/Library/fmul_norm.v:6]
+INFO: [Synth 8-226] default block is never used [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/Library/fmul_norm.v:64]
+INFO: [Synth 8-6155] done synthesizing module 'fmul_norm' (0#1) [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/Library/fmul_norm.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'pipelined_fmul' (0#1) [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/Library/pipelined_fmul.v:6]
+INFO: [Synth 8-6157] synthesizing module 'fdiv_newton' [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/Library/fdiv_newton.v:6]
+INFO: [Synth 8-6157] synthesizing module 'shift_to_msb_equ_1' [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/Library/shift_to_msb_equ_1.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'shift_to_msb_equ_1' (0#1) [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/Library/shift_to_msb_equ_1.v:6]
+INFO: [Synth 8-6157] synthesizing module 'newton24' [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/Library/newton24.v:6]
+INFO: [Synth 8-6157] synthesizing module 'wallace_26x24_product' [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/Library/wallace_26x24_product.v:6]
+INFO: [Synth 8-6157] synthesizing module 'wallace_26x24' [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/Library/wallace_26x24.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'wallace_26x24' (0#1) [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/Library/wallace_26x24.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'wallace_26x24_product' (0#1) [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/Library/wallace_26x24_product.v:6]
+INFO: [Synth 8-6157] synthesizing module 'wallace_26x26_product' [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/Library/wallace_26x26_product.v:6]
+INFO: [Synth 8-6157] synthesizing module 'wallace_26x26' [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/Library/wallace_26x26.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'wallace_26x26' (0#1) [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/Library/wallace_26x26.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'wallace_26x26_product' (0#1) [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/Library/wallace_26x26_product.v:6]
+INFO: [Synth 8-6157] synthesizing module 'wallace_24x26' [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/Library/wallace_24x26.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'wallace_24x26' (0#1) [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/Library/wallace_24x26.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'newton24' (0#1) [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/Library/newton24.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fdiv_newton' (0#1) [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/Library/fdiv_newton.v:6]
+INFO: [Synth 8-6157] synthesizing module 'fsqrt_newton' [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/Library/fsqrt_newton.v:6]
+INFO: [Synth 8-6157] synthesizing module 'shift_even_bits' [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/Library/shift_even_bits.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'shift_even_bits' (0#1) [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/Library/shift_even_bits.v:6]
+INFO: [Synth 8-6157] synthesizing module 'root_newton24' [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/Library/root_newton24.v:6]
+INFO: [Synth 8-6157] synthesizing module 'wallace_24x28_product' [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/Library/wallace_24x28_product.v:6]
+INFO: [Synth 8-6157] synthesizing module 'wallace_24x28' [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/Library/wallace_24x28.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'wallace_24x28' (0#1) [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/Library/wallace_24x28.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'wallace_24x28_product' (0#1) [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/Library/wallace_24x28_product.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'root_newton24' (0#1) [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/Library/root_newton24.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fsqrt_newton' (0#1) [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/Library/fsqrt_newton.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fpu' (0#1) [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/FPU files/fpu/fpu.v:6]
+INFO: [Synth 8-6157] synthesizing module 'debug_control' [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/uart-debug/debug_control.v:1]
+	Parameter CLKS_PER_BIT bound to: 87 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'cmdproc' [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/mips-cpu/RTL/3rd Party IP/uart-debug/cmdproc.v:22]
+	Parameter CLKS_PER_BIT bound to: 87 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'UART_TX' [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/mips-cpu/RTL/3rd Party IP/uart-debug/UART_TX.v:14]
+	Parameter CLKS_PER_BIT bound to: 87 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'UART_TX' (0#1) [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/mips-cpu/RTL/3rd Party IP/uart-debug/UART_TX.v:14]
+INFO: [Synth 8-6157] synthesizing module 'UART_RX' [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/mips-cpu/RTL/3rd Party IP/uart-debug/UART_RX.v:15]
+	Parameter CLKS_PER_BIT bound to: 87 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'UART_RX' (0#1) [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/mips-cpu/RTL/3rd Party IP/uart-debug/UART_RX.v:15]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/mips-cpu/RTL/3rd Party IP/uart-debug/cmdproc.v:279]
+INFO: [Synth 8-6155] done synthesizing module 'cmdproc' (0#1) [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/mips-cpu/RTL/3rd Party IP/uart-debug/cmdproc.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'debug_control' (0#1) [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/uart-debug/debug_control.v:1]
+WARNING: [Synth 8-689] width (1) of port connection 'cpu_mem_addr' does not match port width (32) of module 'debug_control' [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/RISCVpipelinecode/pl_computer.v:491]
+WARNING: [Synth 8-689] width (1) of port connection 'cpu_debug_to_mem_data' does not match port width (32) of module 'debug_control' [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/RISCVpipelinecode/pl_computer.v:492]
+INFO: [Synth 8-6157] synthesizing module 'csr_unit_pipeline_adapter' [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/new/csr_unit_pipeline_adapter.v:25]
+INFO: [Synth 8-6157] synthesizing module 'csr_unit' [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/new/csr_unit.v:21]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/new/csr_unit.v:179]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/new/csr_unit.v:186]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/new/csr_unit.v:193]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/new/csr_unit.v:200]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/new/csr_unit.v:207]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/new/csr_unit.v:214]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/new/csr_unit.v:221]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/new/csr_unit.v:231]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/new/csr_unit.v:249]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/new/csr_unit.v:256]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/new/csr_unit.v:263]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/new/csr_unit.v:270]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/new/csr_unit.v:277]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/new/csr_unit.v:287]
+INFO: [Synth 8-6155] done synthesizing module 'csr_unit' (0#1) [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/new/csr_unit.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'csr_unit_pipeline_adapter' (0#1) [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/new/csr_unit_pipeline_adapter.v:25]
+INFO: [Synth 8-6155] done synthesizing module 'pl_computer' (0#1) [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/RISCVpipelinecode/pl_computer.v:3]
+INFO: [Synth 8-6157] synthesizing module 'ff_sync__parameterized0' [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/new/ff_sync.v:1]
+	Parameter WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ff_sync__parameterized0' (0#1) [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/new/ff_sync.v:1]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/RISCVpipelinecode/mfp_nexys4_ddr.v:224]
+INFO: [Synth 8-6157] synthesizing module 'ila_0' [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.runs/synth_1/.Xil/Vivado-14796-QianPC/realtime/ila_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ila_0' (0#1) [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.runs/synth_1/.Xil/Vivado-14796-QianPC/realtime/ila_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'mfp_nexys4_ddr' (0#1) [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/RISCVpipelinecode/mfp_nexys4_ddr.v:18]
+WARNING: [Synth 8-6014] Unused sequential element r_TX_DV_reg was removed.  [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/mips-cpu/RTL/Common/io/SPI_Master.v:172]
+WARNING: [Synth 8-6014] Unused sequential element IOwait_counter_reg was removed.  [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/mips-cpu/RTL/Common/io/cpugpio.v:76]
+WARNING: [Synth 8-6014] Unused sequential element IOready_reg was removed.  [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/mips-cpu/RTL/Common/io/cpugpio.v:77]
+WARNING: [Synth 8-3848] Net wremw in module/entity pl_id_cu does not have driver. [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/RISCVpipelinecode/pl_id_cu.v:24]
+WARNING: [Synth 8-3848] Net is_fpu in module/entity pl_id_cu does not have driver. [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/RISCVpipelinecode/pl_id_cu.v:40]
+WARNING: [Synth 8-7137] Register reg_a_reg in module newton24 has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/Library/newton24.v:40]
+WARNING: [Synth 8-7137] Register reg_b_reg in module newton24 has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/Library/newton24.v:41]
+WARNING: [Synth 8-7137] Register reg_d_reg in module root_newton24 has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/Library/root_newton24.v:35]
+WARNING: [Synth 8-7137] Register o_TX_Serial_reg in module UART_TX has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/mips-cpu/RTL/3rd Party IP/uart-debug/UART_TX.v:53]
+WARNING: [Synth 8-7137] Register r_Clock_Count_reg in module UART_TX has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/mips-cpu/RTL/3rd Party IP/uart-debug/UART_TX.v:55]
+WARNING: [Synth 8-7137] Register r_Bit_Index_reg in module UART_TX has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/mips-cpu/RTL/3rd Party IP/uart-debug/UART_TX.v:56]
+WARNING: [Synth 8-7137] Register r_TX_Data_reg in module UART_TX has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/mips-cpu/RTL/3rd Party IP/uart-debug/UART_TX.v:61]
+WARNING: [Synth 8-7137] Register r_Clock_Count_reg in module UART_RX has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/mips-cpu/RTL/3rd Party IP/uart-debug/UART_RX.v:50]
+WARNING: [Synth 8-7137] Register r_Bit_Index_reg in module UART_RX has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/mips-cpu/RTL/3rd Party IP/uart-debug/UART_RX.v:51]
+WARNING: [Synth 8-7137] Register o_RX_Byte_reg in module UART_RX has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/mips-cpu/RTL/3rd Party IP/uart-debug/UART_RX.v:91]
+WARNING: [Synth 8-6014] Unused sequential element in_buf_reg[1] was removed.  [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/mips-cpu/RTL/3rd Party IP/uart-debug/cmdproc.v:145]
+WARNING: [Synth 8-7137] Register tx_complete_reg in module cmdproc has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/mips-cpu/RTL/3rd Party IP/uart-debug/cmdproc.v:359]
+WARNING: [Synth 8-3848] Net stl_lw in module/entity pl_computer does not have driver. [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/RISCVpipelinecode/pl_computer.v:15]
+WARNING: [Synth 8-3848] Net stl_fp in module/entity pl_computer does not have driver. [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/RISCVpipelinecode/pl_computer.v:15]
+WARNING: [Synth 8-3848] Net stl_lwc1 in module/entity pl_computer does not have driver. [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/RISCVpipelinecode/pl_computer.v:15]
+WARNING: [Synth 8-3848] Net stl_swc1 in module/entity pl_computer does not have driver. [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/RISCVpipelinecode/pl_computer.v:15]
+WARNING: [Synth 8-3848] Net stl in module/entity pl_computer does not have driver. [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/RISCVpipelinecode/pl_computer.v:15]
+WARNING: [Synth 8-3848] Net mdwait in module/entity pl_computer does not have driver. [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/RISCVpipelinecode/pl_computer.v:150]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'cpu'. This will prevent further optimization [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/RISCVpipelinecode/mfp_nexys4_ddr.v:115]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'my_ila'. This will prevent further optimization [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/RISCVpipelinecode/mfp_nexys4_ddr.v:224]
+WARNING: [Synth 8-7129] Port id_v in module csr_unit_pipeline_adapter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ex_v in module csr_unit_pipeline_adapter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mem_v in module csr_unit_pipeline_adapter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port csr_is_ex in module csr_unit_pipeline_adapter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port csr_cmd_ex[2] in module csr_unit_pipeline_adapter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port csr_cmd_ex[1] in module csr_unit_pipeline_adapter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port csr_cmd_ex[0] in module csr_unit_pipeline_adapter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port csr_wdata_ex[31] in module csr_unit_pipeline_adapter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port csr_wdata_ex[30] in module csr_unit_pipeline_adapter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port csr_wdata_ex[29] in module csr_unit_pipeline_adapter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port csr_wdata_ex[28] in module csr_unit_pipeline_adapter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port csr_wdata_ex[27] in module csr_unit_pipeline_adapter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port csr_wdata_ex[26] in module csr_unit_pipeline_adapter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port csr_wdata_ex[25] in module csr_unit_pipeline_adapter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port csr_wdata_ex[24] in module csr_unit_pipeline_adapter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port csr_wdata_ex[23] in module csr_unit_pipeline_adapter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port csr_wdata_ex[22] in module csr_unit_pipeline_adapter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port csr_wdata_ex[21] in module csr_unit_pipeline_adapter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port csr_wdata_ex[20] in module csr_unit_pipeline_adapter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port csr_wdata_ex[19] in module csr_unit_pipeline_adapter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port csr_wdata_ex[18] in module csr_unit_pipeline_adapter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port csr_wdata_ex[17] in module csr_unit_pipeline_adapter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port csr_wdata_ex[16] in module csr_unit_pipeline_adapter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port csr_wdata_ex[15] in module csr_unit_pipeline_adapter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port csr_wdata_ex[14] in module csr_unit_pipeline_adapter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port csr_wdata_ex[13] in module csr_unit_pipeline_adapter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port csr_wdata_ex[12] in module csr_unit_pipeline_adapter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port csr_wdata_ex[11] in module csr_unit_pipeline_adapter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port csr_wdata_ex[10] in module csr_unit_pipeline_adapter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port csr_wdata_ex[9] in module csr_unit_pipeline_adapter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port csr_wdata_ex[8] in module csr_unit_pipeline_adapter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port csr_wdata_ex[7] in module csr_unit_pipeline_adapter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port csr_wdata_ex[6] in module csr_unit_pipeline_adapter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port csr_wdata_ex[5] in module csr_unit_pipeline_adapter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port csr_wdata_ex[4] in module csr_unit_pipeline_adapter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port csr_wdata_ex[3] in module csr_unit_pipeline_adapter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port csr_wdata_ex[2] in module csr_unit_pipeline_adapter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port csr_wdata_ex[1] in module csr_unit_pipeline_adapter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port csr_wdata_ex[0] in module csr_unit_pipeline_adapter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port is_mret_ex in module csr_unit_pipeline_adapter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wremw in module pl_reg_mw is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sfence_vma_all_mem in module pl_reg_mw is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sret_mem in module pl_reg_mw is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wremw in module pl_reg_em is either unconnected or has no load
+WARNING: [Synth 8-7129] Port e_is_auipc in module pl_stage_exe is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wremw in module pl_reg_de is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sret in module pl_reg_de is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inst[6] in module imme is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inst[5] in module imme is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inst[4] in module imme is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inst[3] in module imme is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inst[2] in module imme is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inst[1] in module imme is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inst[0] in module imme is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inst[24] in module branch_addr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inst[23] in module branch_addr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inst[22] in module branch_addr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inst[21] in module branch_addr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inst[20] in module branch_addr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inst[19] in module branch_addr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inst[18] in module branch_addr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inst[17] in module branch_addr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inst[16] in module branch_addr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inst[15] in module branch_addr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inst[14] in module branch_addr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inst[13] in module branch_addr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inst[12] in module branch_addr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inst[6] in module branch_addr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inst[5] in module branch_addr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inst[4] in module branch_addr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inst[3] in module branch_addr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inst[2] in module branch_addr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inst[1] in module branch_addr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inst[0] in module branch_addr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inst[19] in module jalr_addr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inst[18] in module jalr_addr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inst[17] in module jalr_addr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inst[16] in module jalr_addr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inst[15] in module jalr_addr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inst[14] in module jalr_addr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inst[13] in module jalr_addr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inst[12] in module jalr_addr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inst[11] in module jalr_addr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inst[10] in module jalr_addr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inst[9] in module jalr_addr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inst[8] in module jalr_addr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inst[7] in module jalr_addr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inst[6] in module jalr_addr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inst[5] in module jalr_addr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inst[4] in module jalr_addr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inst[3] in module jalr_addr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inst[2] in module jalr_addr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inst[1] in module jalr_addr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inst[0] in module jalr_addr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inst[11] in module jal_addr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inst[10] in module jal_addr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inst[9] in module jal_addr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inst[8] in module jal_addr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inst[7] in module jal_addr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inst[6] in module jal_addr is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 1617.090 ; gain = 726.902
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1617.090 ; gain = 726.902
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1617.090 ; gain = 726.902
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.202 . Memory (MB): peak = 1617.090 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.runs/synth_1/.Xil/Vivado-14796-QianPC/pll/pll/pll_in_context.xdc] for cell 'pll_mem'
+Finished Parsing XDC File [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.runs/synth_1/.Xil/Vivado-14796-QianPC/pll/pll/pll_in_context.xdc] for cell 'pll_mem'
+Parsing XDC File [c:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'clk_wiz_0'
+WARNING: [Constraints 18-619] A clock with name 'CLK100MHZ' already exists, overwriting the previous clock with the same name. [c:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc:1]
+Finished Parsing XDC File [c:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'clk_wiz_0'
+Parsing XDC File [c:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.gen/sources_1/ip/ila_0/ila_0/ila_0_in_context.xdc] for cell 'my_ila'
+Finished Parsing XDC File [c:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.gen/sources_1/ip/ila_0/ila_0/ila_0_in_context.xdc] for cell 'my_ila'
+Parsing XDC File [c:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.gen/sources_1/ip/mig/mig/mig_in_context.xdc] for cell 'cpu/u_phys_mem/u_memex/mig1'
+Finished Parsing XDC File [c:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.gen/sources_1/ip/mig/mig/mig_in_context.xdc] for cell 'cpu/u_phys_mem/u_memex/mig1'
+Parsing XDC File [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/constrs_1/imports/Common/mfp_nexys4_ddr.xdc]
+INFO: [Constraints 18-483] create_clock: no pin(s)/port(s)/net(s) specified as objects, only virtual clock 'clk_virt' will be created. If you don't want this, please specify pin(s)/ports(s)/net(s) as objects to the command. [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/constrs_1/imports/Common/mfp_nexys4_ddr.xdc:261]
+INFO: [Constraints 18-483] create_clock: no pin(s)/port(s)/net(s) specified as objects, only virtual clock 'tck' will be created. If you don't want this, please specify pin(s)/ports(s)/net(s) as objects to the command. [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/constrs_1/imports/Common/mfp_nexys4_ddr.xdc:265]
+WARNING: [Vivado 12-508] No pins matched 'clk_wiz_0/inst/mmcm_adv_inst/CLKOUT0'. [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/constrs_1/imports/Common/mfp_nexys4_ddr.xdc:318]
+WARNING: [Vivado 12-508] No pins matched 'pll_mem/inst/mmcm_adv_inst/CLKOUT0'. [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/constrs_1/imports/Common/mfp_nexys4_ddr.xdc:322]
+WARNING: [Vivado 12-508] No pins matched 'clk_wiz_0/inst/mmcm_adv_inst/CLKOUT0'. [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/constrs_1/imports/Common/mfp_nexys4_ddr.xdc:326]
+Finished Parsing XDC File [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/constrs_1/imports/Common/mfp_nexys4_ddr.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/constrs_1/imports/Common/mfp_nexys4_ddr.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/mfp_nexys4_ddr_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/constrs_1/imports/Common/mfp_nexys4_ddr.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/mfp_nexys4_ddr_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/mfp_nexys4_ddr_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1722.328 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.090 . Memory (MB): peak = 1722.328 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1722.328 ; gain = 832.141
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1722.328 ; gain = 832.141
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for CLK100MHZ. (constraint file  c:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for CLK100MHZ. (constraint file  c:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_addr[0]. (constraint file  c:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.gen/sources_1/ip/mig/mig/mig_in_context.xdc, line 2).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_addr[0]. (constraint file  c:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.gen/sources_1/ip/mig/mig/mig_in_context.xdc, line 3).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_addr[10]. (constraint file  c:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.gen/sources_1/ip/mig/mig/mig_in_context.xdc, line 4).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_addr[10]. (constraint file  c:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.gen/sources_1/ip/mig/mig/mig_in_context.xdc, line 5).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_addr[11]. (constraint file  c:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.gen/sources_1/ip/mig/mig/mig_in_context.xdc, line 6).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_addr[11]. (constraint file  c:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.gen/sources_1/ip/mig/mig/mig_in_context.xdc, line 7).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_addr[12]. (constraint file  c:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.gen/sources_1/ip/mig/mig/mig_in_context.xdc, line 8).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_addr[12]. (constraint file  c:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.gen/sources_1/ip/mig/mig/mig_in_context.xdc, line 9).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_addr[1]. (constraint file  c:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.gen/sources_1/ip/mig/mig/mig_in_context.xdc, line 10).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_addr[1]. (constraint file  c:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.gen/sources_1/ip/mig/mig/mig_in_context.xdc, line 11).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_addr[2]. (constraint file  c:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.gen/sources_1/ip/mig/mig/mig_in_context.xdc, line 12).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_addr[2]. (constraint file  c:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.gen/sources_1/ip/mig/mig/mig_in_context.xdc, line 13).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_addr[3]. (constraint file  c:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.gen/sources_1/ip/mig/mig/mig_in_context.xdc, line 14).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_addr[3]. (constraint file  c:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.gen/sources_1/ip/mig/mig/mig_in_context.xdc, line 15).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_addr[4]. (constraint file  c:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.gen/sources_1/ip/mig/mig/mig_in_context.xdc, line 16).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_addr[4]. (constraint file  c:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.gen/sources_1/ip/mig/mig/mig_in_context.xdc, line 17).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_addr[5]. (constraint file  c:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.gen/sources_1/ip/mig/mig/mig_in_context.xdc, line 18).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_addr[5]. (constraint file  c:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.gen/sources_1/ip/mig/mig/mig_in_context.xdc, line 19).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_addr[6]. (constraint file  c:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.gen/sources_1/ip/mig/mig/mig_in_context.xdc, line 20).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_addr[6]. (constraint file  c:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.gen/sources_1/ip/mig/mig/mig_in_context.xdc, line 21).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_addr[7]. (constraint file  c:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.gen/sources_1/ip/mig/mig/mig_in_context.xdc, line 22).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_addr[7]. (constraint file  c:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.gen/sources_1/ip/mig/mig/mig_in_context.xdc, line 23).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_addr[8]. (constraint file  c:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.gen/sources_1/ip/mig/mig/mig_in_context.xdc, line 24).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_addr[8]. (constraint file  c:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.gen/sources_1/ip/mig/mig/mig_in_context.xdc, line 25).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_addr[9]. (constraint file  c:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.gen/sources_1/ip/mig/mig/mig_in_context.xdc, line 26).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_addr[9]. (constraint file  c:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.gen/sources_1/ip/mig/mig/mig_in_context.xdc, line 27).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_ba[0]. (constraint file  c:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.gen/sources_1/ip/mig/mig/mig_in_context.xdc, line 28).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_ba[0]. (constraint file  c:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.gen/sources_1/ip/mig/mig/mig_in_context.xdc, line 29).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_ba[1]. (constraint file  c:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.gen/sources_1/ip/mig/mig/mig_in_context.xdc, line 30).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_ba[1]. (constraint file  c:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.gen/sources_1/ip/mig/mig/mig_in_context.xdc, line 31).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_ba[2]. (constraint file  c:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.gen/sources_1/ip/mig/mig/mig_in_context.xdc, line 32).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_ba[2]. (constraint file  c:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.gen/sources_1/ip/mig/mig/mig_in_context.xdc, line 33).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_cas_n. (constraint file  c:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.gen/sources_1/ip/mig/mig/mig_in_context.xdc, line 34).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_cas_n. (constraint file  c:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.gen/sources_1/ip/mig/mig/mig_in_context.xdc, line 35).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_ck_n. (constraint file  c:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.gen/sources_1/ip/mig/mig/mig_in_context.xdc, line 36).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_ck_n. (constraint file  c:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.gen/sources_1/ip/mig/mig/mig_in_context.xdc, line 37).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_ck_p. (constraint file  c:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.gen/sources_1/ip/mig/mig/mig_in_context.xdc, line 38).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_ck_p. (constraint file  c:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.gen/sources_1/ip/mig/mig/mig_in_context.xdc, line 39).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_cke. (constraint file  c:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.gen/sources_1/ip/mig/mig/mig_in_context.xdc, line 40).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_cke. (constraint file  c:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.gen/sources_1/ip/mig/mig/mig_in_context.xdc, line 41).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_cs_n. (constraint file  c:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.gen/sources_1/ip/mig/mig/mig_in_context.xdc, line 42).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_cs_n. (constraint file  c:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.gen/sources_1/ip/mig/mig/mig_in_context.xdc, line 43).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_dm[0]. (constraint file  c:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.gen/sources_1/ip/mig/mig/mig_in_context.xdc, line 44).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_dm[0]. (constraint file  c:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.gen/sources_1/ip/mig/mig/mig_in_context.xdc, line 45).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_dm[1]. (constraint file  c:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.gen/sources_1/ip/mig/mig/mig_in_context.xdc, line 46).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_dm[1]. (constraint file  c:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.gen/sources_1/ip/mig/mig/mig_in_context.xdc, line 47).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_dq[0]. (constraint file  c:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.gen/sources_1/ip/mig/mig/mig_in_context.xdc, line 48).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_dq[0]. (constraint file  c:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.gen/sources_1/ip/mig/mig/mig_in_context.xdc, line 49).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_dq[10]. (constraint file  c:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.gen/sources_1/ip/mig/mig/mig_in_context.xdc, line 50).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_dq[10]. (constraint file  c:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.gen/sources_1/ip/mig/mig/mig_in_context.xdc, line 51).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_dq[11]. (constraint file  c:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.gen/sources_1/ip/mig/mig/mig_in_context.xdc, line 52).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_dq[11]. (constraint file  c:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.gen/sources_1/ip/mig/mig/mig_in_context.xdc, line 53).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_dq[12]. (constraint file  c:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.gen/sources_1/ip/mig/mig/mig_in_context.xdc, line 54).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_dq[12]. (constraint file  c:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.gen/sources_1/ip/mig/mig/mig_in_context.xdc, line 55).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_dq[13]. (constraint file  c:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.gen/sources_1/ip/mig/mig/mig_in_context.xdc, line 56).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_dq[13]. (constraint file  c:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.gen/sources_1/ip/mig/mig/mig_in_context.xdc, line 57).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_dq[14]. (constraint file  c:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.gen/sources_1/ip/mig/mig/mig_in_context.xdc, line 58).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_dq[14]. (constraint file  c:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.gen/sources_1/ip/mig/mig/mig_in_context.xdc, line 59).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_dq[15]. (constraint file  c:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.gen/sources_1/ip/mig/mig/mig_in_context.xdc, line 60).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_dq[15]. (constraint file  c:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.gen/sources_1/ip/mig/mig/mig_in_context.xdc, line 61).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_dq[1]. (constraint file  c:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.gen/sources_1/ip/mig/mig/mig_in_context.xdc, line 62).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_dq[1]. (constraint file  c:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.gen/sources_1/ip/mig/mig/mig_in_context.xdc, line 63).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_dq[2]. (constraint file  c:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.gen/sources_1/ip/mig/mig/mig_in_context.xdc, line 64).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_dq[2]. (constraint file  c:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.gen/sources_1/ip/mig/mig/mig_in_context.xdc, line 65).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_dq[3]. (constraint file  c:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.gen/sources_1/ip/mig/mig/mig_in_context.xdc, line 66).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_dq[3]. (constraint file  c:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.gen/sources_1/ip/mig/mig/mig_in_context.xdc, line 67).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_dq[4]. (constraint file  c:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.gen/sources_1/ip/mig/mig/mig_in_context.xdc, line 68).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_dq[4]. (constraint file  c:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.gen/sources_1/ip/mig/mig/mig_in_context.xdc, line 69).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_dq[5]. (constraint file  c:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.gen/sources_1/ip/mig/mig/mig_in_context.xdc, line 70).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_dq[5]. (constraint file  c:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.gen/sources_1/ip/mig/mig/mig_in_context.xdc, line 71).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_dq[6]. (constraint file  c:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.gen/sources_1/ip/mig/mig/mig_in_context.xdc, line 72).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_dq[6]. (constraint file  c:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.gen/sources_1/ip/mig/mig/mig_in_context.xdc, line 73).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_dq[7]. (constraint file  c:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.gen/sources_1/ip/mig/mig/mig_in_context.xdc, line 74).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_dq[7]. (constraint file  c:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.gen/sources_1/ip/mig/mig/mig_in_context.xdc, line 75).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_dq[8]. (constraint file  c:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.gen/sources_1/ip/mig/mig/mig_in_context.xdc, line 76).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_dq[8]. (constraint file  c:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.gen/sources_1/ip/mig/mig/mig_in_context.xdc, line 77).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_dq[9]. (constraint file  c:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.gen/sources_1/ip/mig/mig/mig_in_context.xdc, line 78).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_dq[9]. (constraint file  c:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.gen/sources_1/ip/mig/mig/mig_in_context.xdc, line 79).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_dqs_n[0]. (constraint file  c:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.gen/sources_1/ip/mig/mig/mig_in_context.xdc, line 80).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_dqs_n[0]. (constraint file  c:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.gen/sources_1/ip/mig/mig/mig_in_context.xdc, line 81).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_dqs_n[1]. (constraint file  c:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.gen/sources_1/ip/mig/mig/mig_in_context.xdc, line 82).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_dqs_n[1]. (constraint file  c:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.gen/sources_1/ip/mig/mig/mig_in_context.xdc, line 83).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_dqs_p[0]. (constraint file  c:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.gen/sources_1/ip/mig/mig/mig_in_context.xdc, line 84).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_dqs_p[0]. (constraint file  c:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.gen/sources_1/ip/mig/mig/mig_in_context.xdc, line 85).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_dqs_p[1]. (constraint file  c:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.gen/sources_1/ip/mig/mig/mig_in_context.xdc, line 86).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_dqs_p[1]. (constraint file  c:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.gen/sources_1/ip/mig/mig/mig_in_context.xdc, line 87).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_odt. (constraint file  c:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.gen/sources_1/ip/mig/mig/mig_in_context.xdc, line 88).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_odt. (constraint file  c:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.gen/sources_1/ip/mig/mig/mig_in_context.xdc, line 89).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_ras_n. (constraint file  c:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.gen/sources_1/ip/mig/mig/mig_in_context.xdc, line 90).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_ras_n. (constraint file  c:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.gen/sources_1/ip/mig/mig/mig_in_context.xdc, line 91).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_we_n. (constraint file  c:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.gen/sources_1/ip/mig/mig/mig_in_context.xdc, line 92).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_we_n. (constraint file  c:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.gen/sources_1/ip/mig/mig/mig_in_context.xdc, line 93).
+Applied set_property KEEP_HIERARCHY = TRUE for cpu. (constraint file  C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/constrs_1/imports/Common/mfp_nexys4_ddr.xdc, line 259).
+Applied set_property KEEP_HIERARCHY = SOFT for pll_mem. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for clk_wiz_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for my_ila. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for cpu/u_phys_mem/u_memex/mig1. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1722.328 ; gain = 832.141
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'st_reg' in module 'ptw_sv32'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'mem_example'
+INFO: [Synth 8-802] inferred FSM for state register 'r_SM_Main_reg' in module 'UART_TX'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'cmdproc'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  S_IDLE |                              000 |                              000
+                S_L1_REQ |                              001 |                              001
+                S_L1_CHK |                              010 |                              010
+                S_L0_REQ |                              011 |                              011
+                S_L0_CHK |                              100 |                              100
+                  S_DONE |                              101 |                              101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'st_reg' using encoding 'sequential' in module 'ptw_sv32'
+INFO: [Synth 8-6159] Found Keep on FSM register 'state_reg' in module 'mem_example', re-encoding will not be performed
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+              STATE_IDLE |                              000 |                              000
+             STATE_WRITE |                              100 |                              100
+       STATE_WRITEDATA_H |                              101 |                              101
+       STATE_WRITEDATA_L |                              110 |                              110
+           STATE_PREREAD |                              001 |                              001
+              STATE_READ |                              010 |                              010
+---------------------------------------------------------------------------------------------------
+WARNING: [Synth 8-327] inferring latch for variable 'sstartflag_reg' [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/RISC-Vrv32m/Start_Div.v:38]
+WARNING: [Synth 8-327] inferring latch for variable 'ustartflag_reg' [C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.srcs/sources_1/imports/RISC-Vrv32m/Start_Div.v:37]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                              000 |                              000
+            TX_START_BIT |                              001 |                              001
+            TX_DATA_BITS |                              010 |                              010
+             TX_STOP_BIT |                              011 |                              011
+              TX_FRAMING |                              100 |                              110
+                 CLEANUP |                              101 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'r_SM_Main_reg' using encoding 'sequential' in module 'UART_TX'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+           STATE_UART_RX |                               00 |                               00
+           STATE_PROCESS |                               01 |                               01
+      STATE_STRING_BUILD |                               10 |                               10
+           STATE_UART_TX |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'cmdproc'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1722.328 ; gain = 832.141
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   49 Bit       Adders := 1     
+	   2 Input   48 Bit       Adders := 1     
+	   2 Input   44 Bit       Adders := 4     
+	   2 Input   42 Bit       Adders := 1     
+	   2 Input   40 Bit       Adders := 1     
+	   2 Input   32 Bit       Adders := 6     
+	   3 Input   32 Bit       Adders := 1     
+	   3 Input   28 Bit       Adders := 1     
+	   2 Input   26 Bit       Adders := 1     
+	   2 Input   25 Bit       Adders := 4     
+	   2 Input   16 Bit       Adders := 1     
+	   5 Input   10 Bit       Adders := 2     
+	   2 Input   10 Bit       Adders := 7     
+	   3 Input   10 Bit       Adders := 1     
+	   3 Input    8 Bit       Adders := 2     
+	   2 Input    8 Bit       Adders := 5     
+	   4 Input    8 Bit       Adders := 1     
+	   2 Input    7 Bit       Adders := 2     
+	   2 Input    6 Bit       Adders := 1     
+	   2 Input    5 Bit       Adders := 4     
+	   2 Input    4 Bit       Adders := 1     
+	   2 Input    3 Bit       Adders := 9     
++---XORs : 
+	   2 Input     32 Bit         XORs := 2     
+	   3 Input      1 Bit         XORs := 5485  
+	   2 Input      1 Bit         XORs := 9     
++---Registers : 
+	               64 Bit    Registers := 2     
+	               50 Bit    Registers := 2     
+	               48 Bit    Registers := 1     
+	               42 Bit    Registers := 2     
+	               40 Bit    Registers := 2     
+	               32 Bit    Registers := 109   
+	               28 Bit    Registers := 1     
+	               27 Bit    Registers := 1     
+	               26 Bit    Registers := 4     
+	               24 Bit    Registers := 7     
+	               23 Bit    Registers := 4     
+	               21 Bit    Registers := 16    
+	               20 Bit    Registers := 1     
+	               16 Bit    Registers := 4     
+	               12 Bit    Registers := 3     
+	               10 Bit    Registers := 5     
+	                8 Bit    Registers := 40    
+	                7 Bit    Registers := 1     
+	                6 Bit    Registers := 2     
+	                5 Bit    Registers := 15    
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 16    
+	                2 Bit    Registers := 16    
+	                1 Bit    Registers := 292   
++---RAMs : 
+	              64K Bit	(2048 X 32 bit)          RAMs := 4     
+	               2K Bit	(64 X 32 bit)          RAMs := 2     
+	               1K Bit	(64 X 24 bit)          RAMs := 2     
++---Muxes : 
+	   2 Input   64 Bit        Muxes := 5     
+	   5 Input   64 Bit        Muxes := 1     
+	   4 Input   64 Bit        Muxes := 4     
+	   7 Input   64 Bit        Muxes := 1     
+	   2 Input   50 Bit        Muxes := 1     
+	   2 Input   47 Bit        Muxes := 9     
+	   2 Input   32 Bit        Muxes := 101   
+	   6 Input   32 Bit        Muxes := 3     
+	   4 Input   32 Bit        Muxes := 21    
+	   5 Input   32 Bit        Muxes := 3     
+	  15 Input   32 Bit        Muxes := 2     
+	   3 Input   32 Bit        Muxes := 1     
+	   2 Input   28 Bit        Muxes := 1     
+	   2 Input   27 Bit        Muxes := 8     
+	   2 Input   26 Bit        Muxes := 2     
+	   2 Input   24 Bit        Muxes := 18    
+	   6 Input   24 Bit        Muxes := 1     
+	   2 Input   23 Bit        Muxes := 5     
+	   4 Input   21 Bit        Muxes := 16    
+	   2 Input   21 Bit        Muxes := 16    
+	   2 Input   20 Bit        Muxes := 7     
+	   3 Input   20 Bit        Muxes := 1     
+	   2 Input   13 Bit        Muxes := 1     
+	   2 Input   12 Bit        Muxes := 1     
+	   2 Input   10 Bit        Muxes := 5     
+	   2 Input    8 Bit        Muxes := 26    
+	   6 Input    8 Bit        Muxes := 2     
+	   3 Input    8 Bit        Muxes := 8     
+	   7 Input    8 Bit        Muxes := 8     
+	   6 Input    7 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 6     
+	   2 Input    4 Bit        Muxes := 14    
+	   6 Input    4 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 26    
+	   6 Input    3 Bit        Muxes := 4     
+	   3 Input    3 Bit        Muxes := 1     
+	   7 Input    3 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 12    
+	   4 Input    2 Bit        Muxes := 2     
+	   3 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 445   
+	   5 Input    1 Bit        Muxes := 1     
+	   6 Input    1 Bit        Muxes := 20    
+	  11 Input    1 Bit        Muxes := 10    
+	   7 Input    1 Bit        Muxes := 10    
+	   3 Input    1 Bit        Muxes := 3     
+	   4 Input    1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3332] Sequential element (cu/Start_Div/sstartflag_reg) is unused and will be removed from module pl_stage_id.
+WARNING: [Synth 8-3332] Sequential element (cu/Start_Div/ustartflag_reg) is unused and will be removed from module pl_stage_id.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:02:53 ; elapsed = 00:02:58 . Memory (MB): peak = 2623.738 ; gain = 1733.551
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping Report
++--------------+------------------+---------------+----------------+
+|Module Name   | RTL Object       | Depth x Width | Implemented As | 
++--------------+------------------+---------------+----------------+
+|root_newton24 | rom0             | 32x8          | LUT            | 
+|fsqrt_newton  | frac_newton/rom0 | 32x8          | LUT            | 
++--------------+------------------+---------------+----------------+
+
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++----------------------------------+---------------------+-----------+----------------------+------------------+
+|Module Name                       | RTL Object          | Inference | Size (Depth x Width) | Primitives       | 
++----------------------------------+---------------------+-----------+----------------------+------------------+
+|cpu/i_1/memsys/\g_itlb_real.itlb  | rpn/ram_reg         | Implied   | 8 x 24               | RAM16X1S x 24    | 
+|cpu/i_1/memsys/\g_dtlb_real.dtlb  | rpn/ram_reg         | Implied   | 8 x 24               | RAM16X1S x 24    | 
+|cpu/i_1/memsys/\g_ic_real.icache  | d_tags_reg          | Implied   | 64 x 24              | RAM64X1S x 24    | 
+|cpu/i_1/memsys/\g_ic_real.icache  | d_data_reg          | Implied   | 64 x 32              | RAM64X1S x 32    | 
+|cpu/i_1/memsys/\g_dc_real.dcache  | d_tags_reg          | Implied   | 64 x 24              | RAM64X1S x 24    | 
+|cpu/i_1/memsys/\g_dc_real.dcache  | d_data_reg          | Implied   | 64 x 32              | RAM64X1S x 32    | 
+|cpu/i_1/u_phys_mem                | system_ram0/ram_reg | Implied   | 2 K x 32             | RAM256X1S x 256  | 
+|cpu/i_1/u_phys_mem                | system_ram1/ram_reg | Implied   | 2 K x 32             | RAM256X1S x 256  | 
+|cpu/i_1/u_phys_mem                | system_ram2/ram_reg | Implied   | 2 K x 32             | RAM256X1S x 256  | 
+|cpu/i_1/u_phys_mem                | system_ram3/ram_reg | Implied   | 2 K x 32             | RAM256X1S x 256  | 
++----------------------------------+---------------------+-----------+----------------------+------------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-565] redefining clock 'CLK100MHZ'
+WARNING: [Synth 8-565] redefining clock 'CLK100MHZ'
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:58 ; elapsed = 00:03:03 . Memory (MB): peak = 2623.738 ; gain = 1733.551
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:03:03 ; elapsed = 00:03:08 . Memory (MB): peak = 2623.738 ; gain = 1733.551
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping Report
++----------------------------------+---------------------+-----------+----------------------+------------------+
+|Module Name                       | RTL Object          | Inference | Size (Depth x Width) | Primitives       | 
++----------------------------------+---------------------+-----------+----------------------+------------------+
+|cpu/i_1/memsys/\g_itlb_real.itlb  | rpn/ram_reg         | Implied   | 8 x 24               | RAM16X1S x 24    | 
+|cpu/i_1/memsys/\g_dtlb_real.dtlb  | rpn/ram_reg         | Implied   | 8 x 24               | RAM16X1S x 24    | 
+|cpu/i_1/memsys/\g_ic_real.icache  | d_tags_reg          | Implied   | 64 x 24              | RAM64X1S x 24    | 
+|cpu/i_1/memsys/\g_ic_real.icache  | d_data_reg          | Implied   | 64 x 32              | RAM64X1S x 32    | 
+|cpu/i_1/memsys/\g_dc_real.dcache  | d_tags_reg          | Implied   | 64 x 24              | RAM64X1S x 24    | 
+|cpu/i_1/memsys/\g_dc_real.dcache  | d_data_reg          | Implied   | 64 x 32              | RAM64X1S x 32    | 
+|cpu/i_1/u_phys_mem                | system_ram0/ram_reg | Implied   | 2 K x 32             | RAM256X1S x 256  | 
+|cpu/i_1/u_phys_mem                | system_ram1/ram_reg | Implied   | 2 K x 32             | RAM256X1S x 256  | 
+|cpu/i_1/u_phys_mem                | system_ram2/ram_reg | Implied   | 2 K x 32             | RAM256X1S x 256  | 
+|cpu/i_1/u_phys_mem                | system_ram3/ram_reg | Implied   | 2 K x 32             | RAM256X1S x 256  | 
++----------------------------------+---------------------+-----------+----------------------+------------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:03:13 ; elapsed = 00:03:19 . Memory (MB): peak = 2623.738 ; gain = 1733.551
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:03:16 ; elapsed = 00:03:22 . Memory (MB): peak = 2623.738 ; gain = 1733.551
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:03:17 ; elapsed = 00:03:22 . Memory (MB): peak = 2623.738 ; gain = 1733.551
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:03:18 ; elapsed = 00:03:24 . Memory (MB): peak = 2623.738 ; gain = 1733.551
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:03:18 ; elapsed = 00:03:24 . Memory (MB): peak = 2623.738 ; gain = 1733.551
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:03:19 ; elapsed = 00:03:24 . Memory (MB): peak = 2623.738 ; gain = 1733.551
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:03:19 ; elapsed = 00:03:24 . Memory (MB): peak = 2623.738 ; gain = 1733.551
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |mig           |         1|
+|2     |clk_wiz_0     |         1|
+|3     |pll           |         1|
+|4     |ila_0         |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |clk_wiz   |     1|
+|2     |ila       |     1|
+|3     |mig       |     1|
+|4     |pll       |     1|
+|5     |BUFG      |     1|
+|6     |CARRY4    |   308|
+|7     |LUT1      |   106|
+|8     |LUT2      |   825|
+|9     |LUT3      |  2413|
+|10    |LUT4      |  1393|
+|11    |LUT5      |  2993|
+|12    |LUT6      |  9453|
+|13    |MUXF7     |   460|
+|14    |MUXF8     |    14|
+|15    |RAM16X1S  |    40|
+|16    |RAM256X1S |  1024|
+|17    |RAM64X1S  |   112|
+|18    |FDCE      |  4725|
+|19    |FDPE      |    49|
+|20    |FDRE      |   655|
+|21    |IBUF      |    30|
+|22    |OBUF      |    42|
+|23    |OBUFT     |     6|
++------+----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:03:19 ; elapsed = 00:03:25 . Memory (MB): peak = 2623.738 ; gain = 1733.551
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 53 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:03:07 ; elapsed = 00:03:20 . Memory (MB): peak = 2623.738 ; gain = 1628.312
+Synthesis Optimization Complete : Time (s): cpu = 00:03:19 ; elapsed = 00:03:25 . Memory (MB): peak = 2623.738 ; gain = 1733.551
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.193 . Memory (MB): peak = 2623.738 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1958 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 2623.738 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1176 instances were transformed.
+  RAM16X1S => RAM32X1S (RAMS32): 40 instances
+  RAM256X1S => RAM256X1S (MUXF7(x2), MUXF8, RAMS64E(x4)): 1024 instances
+  RAM64X1S => RAM64X1S (RAMS64E): 112 instances
+
+Synth Design complete | Checksum: cc2185d3
+INFO: [Common 17-83] Releasing license: Synthesis
+275 Infos, 147 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:03:25 ; elapsed = 00:03:32 . Memory (MB): peak = 2623.738 ; gain = 1946.117
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.036 . Memory (MB): peak = 2623.738 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/JHU_Classes/Spring2026_DDR2/DDR2_Cursor/RISCVpipelinedRV32IMF_INT_VM_Cache.runs/synth_1/mfp_nexys4_ddr.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file mfp_nexys4_ddr_utilization_synth.rpt -pb mfp_nexys4_ddr_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Apr 26 16:43:27 2026...

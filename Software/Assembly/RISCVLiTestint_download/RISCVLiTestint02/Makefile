@@ -1,0 +1,6 @@
+SOFTWARE_ROOT = ..
+A_SOURCES = RISCVLiTest.S
+C_SOURCES = 
+PROGNAME = RISCVLiTest
+
+include $(SOFTWARE_ROOT)/makesystem/RISCVWinparent.mk
